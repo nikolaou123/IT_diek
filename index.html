@@ -1,0 +1,1620 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ΔΙΕΚ</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="DIEK.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wb.conveyerbelt.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb15.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_FontAwesomeIcon3').addClass('visibility-hidden');
+   $('#wb_PanelImageLL').addClass('visibility-hidden');
+   $('#wb_Image8').addClass('visibility-hidden');
+   $('#wb_Image9').addClass('visibility-hidden');
+   $('#wb_Image10').addClass('visibility-hidden');
+   $('#wb_Image11').addClass('visibility-hidden');
+   $('#wb_Image12').addClass('visibility-hidden');
+   $('#wb_Image13').addClass('visibility-hidden');
+   $('#wb_Image14').addClass('visibility-hidden');
+   $('#wb_Image15').addClass('visibility-hidden');
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function onScrollFontAwesomeIcon3()
+   {
+      var $obj = $("#wb_FontAwesomeIcon3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon3', 'transform-lightspeed-in', 100, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon3();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon3();
+   });
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
+   $("#PanelMenu1_markup ul li a").click(function(event)
+   {
+       $.panel.hide($("#PanelMenu1_panel"));
+   });
+   $("#SlideShow2").conveyerbelt({speed:1, spacing: 150});
+   $("#SlideShow3").conveyerbelt({speed:2, spacing: 120});
+   $("#DatePicker4").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker4").datepicker("setDate", "12/12/2024");
+   $("#DatePicker4").change(function()
+   {
+      $('#DatePicker4_input').attr('value',$(this).val());
+   });
+   $("#DatePicker5").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker5").datepicker("setDate", "8/31/2025");
+   $("#DatePicker5").change(function()
+   {
+      $('#DatePicker5_input').attr('value',$(this).val());
+   });
+   $("#DatePicker7").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker7").datepicker("setDate", "4/1/2025");
+   $("#DatePicker7").change(function()
+   {
+      $('#DatePicker7_input').attr('value',$(this).val());
+   });
+   function onScrollPanelImageLL()
+   {
+      var $obj = $("#wb_PanelImageLL");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PanelImageLL', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PanelImageLL', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PanelImageLL').inViewPort(true))
+   {
+      $('#wb_PanelImageLL').addClass("in-viewport");
+   }
+   onScrollPanelImageLL();
+   $(window).scroll(function(event)
+   {
+      onScrollPanelImageLL();
+   });
+   function onScrollImage8()
+   {
+      var $obj = $("#wb_Image8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image8', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image8', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image8').inViewPort(true))
+   {
+      $('#wb_Image8').addClass("in-viewport");
+   }
+   onScrollImage8();
+   $(window).scroll(function(event)
+   {
+      onScrollImage8();
+   });
+   function onScrollImage9()
+   {
+      var $obj = $("#wb_Image9");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image9', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image9', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image9').inViewPort(true))
+   {
+      $('#wb_Image9').addClass("in-viewport");
+   }
+   onScrollImage9();
+   $(window).scroll(function(event)
+   {
+      onScrollImage9();
+   });
+   function onScrollImage10()
+   {
+      var $obj = $("#wb_Image10");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image10', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image10', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image10').inViewPort(true))
+   {
+      $('#wb_Image10').addClass("in-viewport");
+   }
+   onScrollImage10();
+   $(window).scroll(function(event)
+   {
+      onScrollImage10();
+   });
+   function onScrollImage11()
+   {
+      var $obj = $("#wb_Image11");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image11', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image11', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image11').inViewPort(true))
+   {
+      $('#wb_Image11').addClass("in-viewport");
+   }
+   onScrollImage11();
+   $(window).scroll(function(event)
+   {
+      onScrollImage11();
+   });
+   function onScrollImage12()
+   {
+      var $obj = $("#wb_Image12");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image12', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image12', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image12').inViewPort(true))
+   {
+      $('#wb_Image12').addClass("in-viewport");
+   }
+   onScrollImage12();
+   $(window).scroll(function(event)
+   {
+      onScrollImage12();
+   });
+   $("#DatePicker9").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker9").datepicker("setDate", "1/1/2026");
+   $("#DatePicker9").change(function()
+   {
+      $('#DatePicker9_input').attr('value',$(this).val());
+   });
+   $("#DatePicker10").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker10").datepicker("setDate", "4/19/2026");
+   $("#DatePicker10").change(function()
+   {
+      $('#DatePicker10_input').attr('value',$(this).val());
+   });
+   function onScrollImage13()
+   {
+      var $obj = $("#wb_Image13");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image13', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image13', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image13').inViewPort(true))
+   {
+      $('#wb_Image13').addClass("in-viewport");
+   }
+   onScrollImage13();
+   $(window).scroll(function(event)
+   {
+      onScrollImage13();
+   });
+   function onScrollImage14()
+   {
+      var $obj = $("#wb_Image14");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image14', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image14', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image14').inViewPort(true))
+   {
+      $('#wb_Image14').addClass("in-viewport");
+   }
+   onScrollImage14();
+   $(window).scroll(function(event)
+   {
+      onScrollImage14();
+   });
+   function onScrollImage15()
+   {
+      var $obj = $("#wb_Image15");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image15', 'animate-fade-in-up', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image15', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image15').inViewPort(true))
+   {
+      $('#wb_Image15').addClass("in-viewport");
+   }
+   onScrollImage15();
+   $(window).scroll(function(event)
+   {
+      onScrollImage15();
+   });
+   $("#DatePicker2").datepicker(
+   {
+      dateFormat: 'm/d/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'fadeIn'
+   });
+   $("#DatePicker2").datepicker("setDate", "6/1/2026");
+   $("#DatePicker2").change(function()
+   {
+      $('#DatePicker2_input').attr('value',$(this).val());
+   });
+   $("#DatePicker6").datepicker(
+   {
+      dateFormat: 'm/d/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'fadeIn'
+   });
+   $("#DatePicker6").datepicker("setDate", "8/25/2026");
+   $("#DatePicker6").change(function()
+   {
+      $('#DatePicker6_input').attr('value',$(this).val());
+   });
+   $("#Progressbar1").progressbar(
+   {
+      value: 58
+   });
+   $("#Progressbar2").progressbar(
+   {
+      value: 30
+   });
+   $("#Progressbar3").progressbar(
+   {
+      value: 12
+   });
+   $("#Progressbar4").progressbar(
+   {
+      value: 42
+   });
+   $("#Progressbar5").progressbar(
+   {
+      value: 32
+   });
+   $("#DatePicker1").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker1").datepicker("setDate", "1/8/2025");
+   $("#DatePicker1").change(function()
+   {
+      $('#DatePicker1_input').attr('value',$(this).val());
+   });
+   $("#DatePicker3").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker3").datepicker("setDate", "8/10/2025");
+   $("#DatePicker3").change(function()
+   {
+      $('#DatePicker3_input').attr('value',$(this).val());
+   });
+});
+</script>
+</head>
+<body>
+<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:207;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:272px;height:47px;z-index:0;">
+<img src="images/DEH-Innovation-Hub_colour-posivite-2H.png" id="Image1" alt="">
+</div>
+<div id="wb_Image18" style="display:inline-block;width:153px;height:38px;z-index:1;">
+<img src="images/iHub00.png" id="Image18" alt="">
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:55px;z-index:207;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader1_Container" style="width:1202px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Text3" style="position:absolute;left:202px;top:15px;width:799px;height:25px;text-align:center;z-index:2;">
+<span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:21px;"><strong>Innovation HUB</strong></span></div>
+<div id="wb_FontAwesomeIcon3" style="position:absolute;left:425px;top:7px;width:26px;height:26px;text-align:center;z-index:3;">
+<a href="#LayoutGrid9"><div id="FontAwesomeIcon3"><i class="fa fa-home"></i></div></a></div>
+<div id="wb_PanelMenu1" style="position:absolute;left:1156px;top:9px;width:35px;height:35px;z-index:4;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="./index.html" class="active"></a></li>
+   <li role="menuitem"><a href="https://deidplr.sharepoint.com/teams/ITSH/SitePages/Home.aspx" target="_blank"><i class="fa fa-headphones fa-fw"></i><span>IT Support</span></a></li>
+   <li role="menuitem"><a href="https://innovationhub.dei.gr/el/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>Inoviation HUB (site)</span></a></li>
+   <li role="menuitem"><a href="https://my.dei.gr/sslvpn/Login/Login" target="_blank"><i class="fa fa-user fa-fw"></i><span>My.dei.gr</span></a></li>
+   <li role="menuitem"><a href="https://www.dei.gr/el" target="_blank"><i class="fa fa-lightbulb-o fa-fw"></i><span> &#916;&#917;&#919; &#913;.&#917;.</span></a></li>
+   <li role="menuitem"><a href="https://e-signit.gr/dashboard" target="_blank"><i class="fa fa-sign-in fa-fw"></i><span>e-signit (ADACOM)</span></a></li>
+   <li role="menuitem"><a href="https://papyros.dei.gr/login.jsp?sessionExp=1" target="_blank"><i class="fa fa-product-hunt fa-fw"></i><span>&#928;&#940;&#960;&#965;&#961;&#959;&#962;</span></a></li>
+   <li role="menuitem"><a href="https://mail.google.com/" target="_blank"><i class="fa fa-at fa-fw"></i><span>Gmail</span></a></li>
+   <li role="menuitem"><a href="https://calendar.google.com/calendar/r" target="_blank"><i class="fa fa-calendar fa-fw"></i><span>&#919;&#956;&#949;&#961;&#959;&#955;&#972;&#947;&#953;&#959;</span></a></li>
+   <li role="menuitem"><a href="mailto:"><i class="fa fa-at fa-fw"></i><span>Ms OutLook</span></a></li>
+   <li role="menuitem"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google fa-fw"></i><span>Google Brower</span></a></li>
+   <li role="menuitem"><a href="https://www.google.gr/maps/@37.9920672,23.8525248,15z" target="_blank"><i class="fa fa-map fa-fw"></i><span>&#935;&#940;&#961;&#964;&#949;&#962;</span></a></li>
+   <li role="menuitem"><a href="https://www.transfernow.net/el/" target="_blank"><i class="fa fa-fighter-jet fa-fw"></i><span>WeTranfer</span></a></li>
+   <li role="menuitem"><a href="https://www.plaisio.gr/FindYourCartridge" target="_blank"><i class="fa fa-print fa-fw"></i><span>&#928;&#923;&#913;&#921;&#931;&#921;&#927; (Toner)</span></a></li>
+   <li role="menuitem"><a href="https://www.vrisko.gr/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>vrisko.gr</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrida">
+<div id="LayoutGrida">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGridb">
+<div id="LayoutGridb">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGridc">
+<div id="LayoutGridc">
+<div class="row">
+<div class="col-1">
+<ul id="SlideShow2" style="overflow:hidden;z-index:5;">
+<li><img class="image" src="images/images (1).jpg" alt="" title=""></li>
+<li><img class="image" src="images/e3dd657d6a8ed6b5c10c920358352b90_XL.jpg" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/images (2).jpg" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="2f925715149c2c7365e6.jpeg" style="display:none;" alt="" title=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGridd">
+<div id="LayoutGridd">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:541px;z-index:117;" title="Social Media Sticky">
+<a href="#PageHeader" title="aaaaa"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:388px;width:150px;height:45px;z-index:6"></a>
+<a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:433px;width:150px;height:45px;z-index:7"></a>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_ResponsiveMenu1" style="display:inline-block;width:286px;height:77px;z-index:8;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-list fa-2x">&nbsp;</i>Projects<b class="arrow-down"></b></label>
+<a role="menuitem" href="#"><i class="fa fa-list fa-2x">&nbsp;</i><br>Projects<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li><a role="menuitem" href="#LayoutGrid12">Lift&nbsp;&amp;&nbsp;Shift&nbsp;iHubERP</a></li>
+<li><a role="menuitem" href="#LayoutGrid32">Lift&nbsp;&amp;&nbsp;Shift&nbsp;QUIS</a></li>
+<li><a role="menuitem" href="#LayoutGrid50">Lift&nbsp;&amp;&nbsp;Shift&nbsp;FileSrv</a></li>
+<li><a role="menuitem" href="#LayoutGrid75">iHub&nbsp;Ticketing</a></li>
+<li><a role="menuitem" href="#LayoutGrid94">iHub&nbsp;Exams</a></li>
+</ul>
+</li>
+<li><a role="menuitem" href="#"><i class="fa fa-ambulance fa-2x">&nbsp;</i><br>User&nbsp;Manuals</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<div id="Html4" style="display:inline-block;width:51px;height:21px;z-index:9">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image20" style="display:inline-block;width:1172px;height:535px;opacity:0.50;z-index:10;">
+<img src="images/R.jpg" id="Image20" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="row">
+<div class="col-1">
+<div id="Html10" style="display:inline-block;width:148px;height:639px;z-index:11">
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image3" style="display:inline-block;width:67px;height:50px;z-index:12;">
+<img src="images/ihub3.png" id="Image3" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Arial;font-size:35px;"><strong>Lift &amp; Shift iHubERP</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:14;">
+<a href="./index.html#PageHeader"><div id="FontAwesomeIcon1"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid17">
+<div id="LayoutGrid17">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid22">
+<div id="LayoutGrid22">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid23">
+<div id="LayoutGrid23">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid16">
+<div id="LayoutGrid16">
+<div class="row">
+<div class="col-1">
+<ul id="SlideShow3" style="overflow:hidden;z-index:15;">
+<li><img class="image" src="images/ERPHelpDesk.png" alt="" title=""></li>
+<li><img class="image" src="images/it-support-services.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/Quis.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/ihub3.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/ERPexam_r.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/De-online-werkplek-Support-Beheer-Strategie.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/images.jpg" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/ESYD-Logo_2025-GR-RGB__1_-removebg-preview-1-1-e1767794885704.png" style="display:none;" alt="" title=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid18">
+<div id="LayoutGrid18">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text6">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
+</div>
+<input id="DatePicker4_input" name="DatePicker4" style="display:none" type="text" value="12/12/2024">
+<div id="DatePicker4" style="display:inline-block;width:168px;height:250px;z-index:17;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text16">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
+</div>
+<input id="DatePicker7_input" name="DatePicker4" style="display:none" type="text" value="4/1/2025">
+<div id="DatePicker7" style="display:inline-block;width:168px;height:250px;z-index:19;">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text7">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Οριστικοποίηση</u></span>
+</div>
+<input id="DatePicker5_input" name="DatePicker4" style="display:none" type="text" value="8/31/2025">
+<div id="DatePicker5" style="display:inline-block;width:168px;height:250px;z-index:21;">
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid19">
+<div id="LayoutGrid19">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text11">
+<span style="color:#191970;font-family:'Trebuchet MS';font-size:27px;"><em>Διαδοχικές ενέργειες</em></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid20">
+<div id="LayoutGrid20">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image11" style="display:inline-block;width:106px;height:106px;z-index:23;">
+<img src="images/icons8-business-group-100.png" id="Image11" alt="">
+</div>
+<div id="wb_Text12">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Ανάλυση, επικοινωνία με IT κεντρικά για υποδομές - σχεδιασμός</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_PanelImageLL" style="display:inline-block;width:106px;height:106px;z-index:25;">
+<img src="images/icons8-data-encryption-100.png" id="PanelImageLL" alt="">
+</div>
+<div id="wb_Text22">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>SetUp Sql Server</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image8" style="display:inline-block;width:106px;height:106px;z-index:27;">
+<img src="images/icons8-upload-100.png" id="Image8" alt="">
+</div>
+<div id="wb_Text8">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Lift &amp; Shift</strong></span>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Image9" style="display:inline-block;width:106px;height:106px;z-index:29;">
+<img src="images/icons8-upload-via-bowser-100.png" id="Image9" alt="">
+</div>
+<div id="wb_Text9">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Connections (eArion, AVDs)<br>Attachments</strong></span>
+</div>
+</div>
+<div class="col-5">
+<div id="wb_Image10" style="display:inline-block;width:106px;height:106px;z-index:31;">
+<img src="images/icons8-online-binary-code-100.png" id="Image10" alt="">
+</div>
+<div id="wb_Text10">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Upgrate VBA (web configure)</strong></span>
+</div>
+</div>
+<div class="col-6">
+<div id="wb_Image12" style="display:inline-block;width:106px;height:106px;z-index:33;">
+<img src="images/icons8-hand-holding-heart-100.png" id="Image12" alt="">
+</div>
+<div id="wb_Text13">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Support</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid21">
+<div id="LayoutGrid21">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text17">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>ΔΠΛΡ<br>Accensure<br>Νικολάου<br>Σιδηρόπουλος</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text18">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου<br>Σιδηρόπουλος</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text19">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου</strong></span>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_Text20">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου<br>Σιδηρόπουλος</strong></span>
+</div>
+</div>
+<div class="col-5">
+<div id="wb_Text21">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου</strong></span>
+</div>
+</div>
+<div class="col-6">
+<div id="wb_Text23">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid24">
+<div id="LayoutGrid24">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid25">
+<div id="LayoutGrid25">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid27">
+<div id="LayoutGrid27">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid28">
+<div id="LayoutGrid28">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid29">
+<div id="LayoutGrid29">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid30">
+<div id="LayoutGrid30">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid31">
+<div id="LayoutGrid31">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid26">
+<div id="LayoutGrid26">
+<div class="row">
+<div class="col-1">
+<div id="Html2" style="display:inline-block;width:100px;height:868px;z-index:41">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid32">
+<div id="LayoutGrid32">
+<div class="row">
+<div class="col-1">
+<div id="Html11" style="display:inline-block;width:148px;height:64px;z-index:42">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid34">
+<div id="LayoutGrid34">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid35">
+<div id="LayoutGrid35">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid36">
+<div id="LayoutGrid36">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid37">
+<div id="LayoutGrid37">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid39">
+<div id="LayoutGrid39">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid40">
+<div id="LayoutGrid40">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid41">
+<div id="LayoutGrid41">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid33">
+<div id="LayoutGrid33">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:inline-block;width:46px;height:46px;z-index:43;">
+<img src="images/Quis.png" id="Image2" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:35px;"><strong>Lift &amp; Shift Quis</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_FontAwesomeIcon12" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:45;">
+<a href="./index.html#PageHeader"><div id="FontAwesomeIcon12"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid38">
+<div id="LayoutGrid38">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text24">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
+</div>
+<input id="DatePicker9_input" name="DatePicker4" style="display:none" type="text" value="1/1/2026">
+<div id="DatePicker9" style="display:inline-block;width:168px;height:250px;z-index:47;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text25">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
+</div>
+<input id="DatePicker10_input" name="DatePicker4" style="display:none" type="text" value="4/19/2026">
+<div id="DatePicker10" style="display:inline-block;width:168px;height:250px;z-index:49;">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text26">
+<span style="color:#000000;font-family:Arial;font-size:17px;">Στις υπάρχουσες υποδομές του iHubERP και εφόσων αυτές έχουν περάσει όλες τις δοκιμασίες και έχουν ομαλοποιηθεί, έγινε η μεταφορά και του Quis</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid42">
+<div id="LayoutGrid42">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text33">
+<span style="color:#191970;font-family:'Trebuchet MS';font-size:27px;"><em>Διαδοχικές ενέργειες</em></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid43">
+<div id="LayoutGrid43">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image13" style="display:inline-block;width:106px;height:106px;z-index:52;">
+<img src="images/icons8-data-encryption-100.png" id="Image13" alt="">
+</div>
+<div id="wb_Text27">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>SetUp Sql Server</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image14" style="display:inline-block;width:106px;height:106px;z-index:54;">
+<img src="images/icons8-upload-100.png" id="Image14" alt="">
+</div>
+<div id="wb_Text29">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Lift &amp; Shift</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image15" style="display:inline-block;width:106px;height:106px;z-index:56;">
+<img src="images/icons8-upload-via-bowser-100.png" id="Image15" alt="">
+</div>
+<div id="wb_Text31">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>restructuring Attachments</strong></span>
+</div>
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+<div class="col-7">
+</div>
+<div class="col-8">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid44">
+<div id="LayoutGrid44">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text28">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text30">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου<br>Καρνεμίδης</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text32">
+<span style="color:#2E8B57;font-family:'Trebuchet MS';font-size:20px;"><strong>Νικολάου</strong></span>
+</div>
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid45">
+<div id="LayoutGrid45">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid46">
+<div id="LayoutGrid46">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid47">
+<div id="LayoutGrid47">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid48">
+<div id="LayoutGrid48">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid52">
+<div id="LayoutGrid52">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid53">
+<div id="LayoutGrid53">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid54">
+<div id="LayoutGrid54">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid55">
+<div id="LayoutGrid55">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid56">
+<div id="LayoutGrid56">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid49">
+<div id="LayoutGrid49">
+<div class="row">
+<div class="col-1">
+<div id="Html3" style="display:inline-block;width:100px;height:608px;z-index:61">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid50">
+<div id="LayoutGrid50">
+<div class="row">
+<div class="col-1">
+<div id="Html12" style="display:inline-block;width:148px;height:64px;z-index:62">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid51">
+<div id="LayoutGrid51">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_Text5">
+<h1>Lift &amp; Shift //Shadow/FileSrv</h1>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_FontAwesomeIcon13" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:64;">
+<a href="./index.html#PageHeader"><div id="FontAwesomeIcon13"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid57">
+<div id="LayoutGrid57">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text34">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
+</div>
+<input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="6/1/2026">
+<div id="DatePicker2" style="display:inline-block;width:168px;height:234px;z-index:66;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text35">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Ολοκλήρωση</u></span>
+</div>
+<input id="DatePicker6_input" name="DatePicker1" style="display:none" type="text" value="8/25/2026">
+<div id="DatePicker6" style="display:inline-block;width:168px;height:241px;z-index:68;">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image7" style="display:inline-block;width:157px;height:308px;z-index:69;">
+<img src="images/c6g0t2n18w.jpg" id="Image7" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid58">
+<div id="LayoutGrid58">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid59">
+<div id="LayoutGrid59">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid60">
+<div id="LayoutGrid60">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid61">
+<div id="LayoutGrid61">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid63">
+<div id="LayoutGrid63">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid64">
+<div id="LayoutGrid64">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid65">
+<div id="LayoutGrid65">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid72">
+<div id="LayoutGrid72">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid67">
+<div id="LayoutGrid67">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label3" style="display:inline-block;width:71px;line-height:18px;z-index:70;">ΤΕΔΕ</label>
+</div>
+<div class="col-2">
+<div id="Progressbar1"  style="display:block;width:100%;height:18px;z-index:71;">
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label8" style="display:inline-block;width:42px;line-height:18px;z-index:72;">560G</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid68">
+<div id="LayoutGrid68">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label4" style="display:inline-block;width:71px;line-height:18px;z-index:73;">ΤΗΔΜ</label>
+</div>
+<div class="col-2">
+<div id="Progressbar2"  style="display:block;width:100%;height:18px;z-index:74;">
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label9" style="display:inline-block;width:42px;line-height:18px;z-index:75;">300</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid69">
+<div id="LayoutGrid69">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label5" style="display:inline-block;width:147px;line-height:18px;z-index:76;">ΤΗΔΜ_ΗΛΕΚΤΡΟΚΙΝΗΣΗ</label>
+</div>
+<div class="col-2">
+<div id="Progressbar3"  style="display:block;width:100%;height:18px;z-index:77;">
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label10" style="display:inline-block;width:42px;line-height:18px;z-index:78;">120</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid70">
+<div id="LayoutGrid70">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label6" style="display:block;width:100%;line-height:18px;z-index:79;">Φορέας Ελέγχου</label>
+</div>
+<div class="col-2">
+<div id="Progressbar4"  style="display:block;width:100%;height:18px;z-index:80;">
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label11" style="display:inline-block;width:42px;line-height:18px;z-index:81;">420</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid71">
+<div id="LayoutGrid71">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label7" style="display:block;width:100%;line-height:18px;z-index:82;">ΕΧΥΠ</label>
+</div>
+<div class="col-2">
+<div id="Progressbar5"  style="display:block;width:100%;height:18px;z-index:83;">
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label12" style="display:inline-block;width:42px;line-height:18px;z-index:84;">320</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid62">
+<div id="LayoutGrid62">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image16" style="display:inline-block;width:531px;height:247px;z-index:85;">
+<img src="images/087pjukl20.jpg" id="Image16" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:86;">
+<img src="images/a62utwoun1.jpg" id="Image6" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid73">
+<div id="LayoutGrid73">
+<div class="row">
+<div class="col-1">
+<div id="Html8" style="display:inline-block;width:100px;height:666px;z-index:87">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid74">
+<div id="LayoutGrid74">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid77">
+<div id="LayoutGrid77">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid78">
+<div id="LayoutGrid78">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid79">
+<div id="LayoutGrid79">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid80">
+<div id="LayoutGrid80">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid81">
+<div id="LayoutGrid81">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid82">
+<div id="LayoutGrid82">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid83">
+<div id="LayoutGrid83">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid85">
+<div id="LayoutGrid85">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid86">
+<div id="LayoutGrid86">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid87">
+<div id="LayoutGrid87">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid75">
+<div id="LayoutGrid75">
+<div class="row">
+<div class="col-1">
+<div id="Html13" style="display:inline-block;width:148px;height:64px;z-index:88">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid76">
+<div id="LayoutGrid76">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image4" style="display:inline-block;width:40px;height:40px;z-index:89;">
+<img src="images/ERPHelpDesk.png" id="Image4" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:35px;"><strong>Ihub Ticketing</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_FontAwesomeIcon14" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:91;">
+<a href="./index.html#LayoutGrid1"><div id="FontAwesomeIcon14"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid84">
+<div id="LayoutGrid84">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text14">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
+</div>
+<input id="DatePicker1_input" name="DatePicker4" style="display:none" type="text" value="1/8/2025">
+<div id="DatePicker1" style="display:inline-block;width:168px;height:250px;z-index:93;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text15">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
+</div>
+<input id="DatePicker3_input" name="DatePicker4" style="display:none" type="text" value="8/10/2025">
+<div id="DatePicker3" style="display:inline-block;width:168px;height:250px;z-index:95;">
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image5" style="display:inline-block;width:716px;height:240px;z-index:96;">
+<img src="images/vyea3jkc1q.jpg" id="Image5" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid88">
+<div id="LayoutGrid88">
+<div class="row">
+<div class="col-1">
+<iframe name="InlineFrame1" id="InlineFrame1" src="\\vm-inh-erp-prd\RunTime\DBtables\My_Tickets_Συγκεντρωτικά.html"></iframe>
+</div>
+<div class="col-2">
+<iframe name="InlineFrame1" id="InlineFrame2" src="\\vm-inh-erp-prd\RunTime\DBtables\My_Tickets_Αναλυτικά.html"></iframe>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid89">
+<div id="LayoutGrid89">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid90">
+<div id="LayoutGrid90">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid91">
+<div id="LayoutGrid91">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid92">
+<div id="LayoutGrid92">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid96">
+<div id="LayoutGrid96">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid97">
+<div id="LayoutGrid97">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid93">
+<div id="LayoutGrid93">
+<div class="row">
+<div class="col-1">
+<div id="Html7" style="display:inline-block;width:100px;height:420px;z-index:99">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid94">
+<div id="LayoutGrid94">
+<div class="row">
+<div class="col-1">
+<div id="Html14" style="display:inline-block;width:148px;height:64px;z-index:100">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid95">
+<div id="LayoutGrid95">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image17" style="display:inline-block;width:66px;height:48px;z-index:101;">
+<img src="images/ERPexam_r.png" id="Image17" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text36">
+<span style="color:#000000;font-family:Arial;font-size:35px;"><strong>Ihub Exams</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_FontAwesomeIcon15" style="display:inline-block;width:32px;height:32px;text-align:center;z-index:103;">
+<a href="./index.html#PageHeader"><div id="FontAwesomeIcon15"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid98">
+<div id="LayoutGrid98">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text37">
+<span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>Σχήματα πιστοποίησης (8)</u></strong></span>
+</div>
+<div id="wb_Image19" style="display:inline-block;width:344px;height:160px;z-index:105;">
+<img src="images/dbgbp9vf0r.jpg" id="Image19" alt="">
+</div>
+<div id="wb_Text38">
+<span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>Πραγματοποιηθήσες εξετάσεις</u></strong></span>
+</div>
+<div id="wb_Image21" style="display:inline-block;width:250px;height:344px;z-index:107;">
+<img src="images/x426ev52uv.jpg" id="Image21" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text39">
+<span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>224 Εξεταζόμενοι</u></strong></span>
+</div>
+<div id="wb_Image22" style="display:inline-block;width:317px;height:596px;z-index:109;">
+<img src="images/gsqspu9h61.jpg" id="Image22" alt="">
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
