@@ -30,7 +30,6 @@ $(document).ready(function()
    $('#wb_Image14').addClass('visibility-hidden');
    $('#wb_Image15').addClass('visibility-hidden');
    $('#wb_Image23').addClass('visibility-hidden');
-   $('#wb_Image24').addClass('visibility-hidden');
    $('#wb_Image25').addClass('visibility-hidden');
    $('#wb_Image26').addClass('visibility-hidden');
    $('#wb_Image27').addClass('visibility-hidden');
@@ -437,30 +436,6 @@ $(document).ready(function()
    {
       onScrollImage23();
    });
-   function onScrollImage24()
-   {
-      var $obj = $("#wb_Image24");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image24', 'animate-fade-in-up', 500, 1000);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image24', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image24').inViewPort(true))
-   {
-      $('#wb_Image24').addClass("in-viewport");
-   }
-   onScrollImage24();
-   $(window).scroll(function(event)
-   {
-      onScrollImage24();
-   });
    function onScrollImage25()
    {
       var $obj = $("#wb_Image25");
@@ -641,6 +616,8 @@ $(document).ready(function()
 <div id="wb_Text51">
 <span style="color:#000000;font-family:'Trebuchet MS';font-size:16px;"><em><u>Μεγάλα Projects</u></em></span>
 </div>
+</div>
+<div class="col-2">
 </div>
 </div>
 </div>
