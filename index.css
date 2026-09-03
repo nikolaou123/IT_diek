@@ -65,7 +65,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 91.66666667%;
+   width: 66.66666667%;
    text-align: left;
 }
 #LayoutGrid9 > .row > .col-2
@@ -73,7 +73,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 8.33333333%;
+   width: 33.33333333%;
    text-align: right;
 }
 #LayoutGrid9:before,
@@ -389,7 +389,9 @@ body
    text-align: center;
    width: 100%;
    background-color: transparent;
-   background-image: none;
+   background-image: url(images/R.jpg);
+   background-repeat: space;
+   background-position: center top;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -397,7 +399,7 @@ body
 #LayoutGridc
 {
    box-sizing: border-box;
-   padding: 60px 15px 60px 15px;
+   padding: 30px 15px 30px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -406,7 +408,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGridc > .row > .col-1
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -415,7 +417,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGridc > .row > .col-1
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2
 {
    float: left;
 }
@@ -424,8 +426,16 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: center;
+   width: 50%;
+   text-align: right;
+}
+#LayoutGridc > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 50%;
+   text-align: right;
 }
 #LayoutGridc:before,
 #LayoutGridc:after,
@@ -442,7 +452,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGridc > .row > .col-1
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2
 {
    float: none;
    width: 100% !important;
@@ -8661,23 +8671,6 @@ body
    height: 596px;
    vertical-align: top;
 }
-#wb_Image20
-{
-   height: 100%;
-   margin: 0;
-   vertical-align: top;
-}
-#Image20
-{
-   border: 0px solid transparent;
-   border-radius: 2px;
-   padding: 0;
-   display: inline-block;
-   width: 100%;
-   height: 100%;
-   vertical-align: top;
-   object-fit: cover;
-}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -9789,4 +9782,16 @@ body
    -webkit-transition: background-color 500ms linear 0ms;
    -moz-transition: background-color 500ms linear 0ms;
    transition: background-color 500ms linear 0ms;
+}
+#InlineFrame1
+{
+   border: 1px solid transparent;
+   margin: 0;
+}
+#InlineFrame1
+{
+   display: inline-block;
+   width: 268px;
+   height: 110px;
+   vertical-align: top;
 }
