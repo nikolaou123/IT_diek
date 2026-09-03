@@ -390,7 +390,7 @@ body
    width: 100%;
    background-color: transparent;
    background-image: url(images/R.jpg);
-   background-repeat: space;
+   background-repeat: round;
    background-position: center top;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -399,7 +399,7 @@ body
 #LayoutGridc
 {
    box-sizing: border-box;
-   padding: 30px 15px 30px 15px;
+   padding: 0px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -457,6 +457,15 @@ body
    float: none;
    width: 100% !important;
 }
+}
+#LayoutGridc-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(to bottom, #FFFFFF 0%, rgba(255,255,255,0.00) 100%);
 }
 #wb_LayoutGridb
 {
@@ -534,7 +543,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #ADD8E6;
+   background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -9782,16 +9791,4 @@ body
    -webkit-transition: background-color 500ms linear 0ms;
    -moz-transition: background-color 500ms linear 0ms;
    transition: background-color 500ms linear 0ms;
-}
-#InlineFrame1
-{
-   border: 1px solid transparent;
-   margin: 0;
-}
-#InlineFrame1
-{
-   display: inline-block;
-   width: 268px;
-   height: 110px;
-   vertical-align: top;
 }
