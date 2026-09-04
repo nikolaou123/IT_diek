@@ -15,11 +15,11 @@
 <script src="wb.panel.min.js"></script>
 <script src="wb.conveyerbelt.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="wb.newsviewer.min.js"></script>
 <script src="wwb15.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#wb_FontAwesomeIcon3').addClass('visibility-hidden');
    $('#wb_PanelImageLL').addClass('visibility-hidden');
    $('#wb_Image8').addClass('visibility-hidden');
    $('#wb_Image9').addClass('visibility-hidden');
@@ -30,30 +30,13 @@ $(document).ready(function()
    $('#wb_Image14').addClass('visibility-hidden');
    $('#wb_Image15').addClass('visibility-hidden');
    $('#wb_Image23').addClass('visibility-hidden');
-   $('#wb_Image25').addClass('visibility-hidden');
-   $('#wb_Image26').addClass('visibility-hidden');
    $('#wb_Image27').addClass('visibility-hidden');
-   $('#wb_Image18').addClass('visibility-hidden');
-   $('#wb_Image24').addClass('visibility-hidden');
+   $('#Image26').addClass('visibility-hidden');
    function skrollrInit()
    {
       skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
    }
    skrollrInit();
-   function onScrollFontAwesomeIcon3()
-   {
-      var $obj = $("#wb_FontAwesomeIcon3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_FontAwesomeIcon3', 'transform-lightspeed-in', 100, 1000);
-      }
-   }
-   onScrollFontAwesomeIcon3();
-   $(window).scroll(function(event)
-   {
-      onScrollFontAwesomeIcon3();
-   });
    $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
    $("#PanelMenu1_markup ul li a").click(function(event)
    {
@@ -419,7 +402,7 @@ $(document).ready(function()
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Image23', 'animate-rotate-in-left', 500, 1000);
+         AnimateCss('wb_Image23', 'animate-fade-in-down', 500, 1000);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
@@ -436,54 +419,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollImage23();
-   });
-   function onScrollImage25()
-   {
-      var $obj = $("#wb_Image25");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image25', 'animate-fade-in-up', 500, 1000);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image25', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image25').inViewPort(true))
-   {
-      $('#wb_Image25').addClass("in-viewport");
-   }
-   onScrollImage25();
-   $(window).scroll(function(event)
-   {
-      onScrollImage25();
-   });
-   function onScrollImage26()
-   {
-      var $obj = $("#wb_Image26");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image26', 'animate-fade-in-up', 500, 1000);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image26', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image26').inViewPort(true))
-   {
-      $('#wb_Image26').addClass("in-viewport");
-   }
-   onScrollImage26();
-   $(window).scroll(function(event)
-   {
-      onScrollImage26();
    });
    function onScrollImage27()
    {
@@ -510,102 +445,121 @@ $(document).ready(function()
       onScrollImage27();
    });
    $("#SlideShow2").conveyerbelt({speed:1, spacing: 150});
-   function onScrollImage18()
+   var NewsFeedTicker1_Data = new Array();
+   $("#NewsFeedTicker1").newsviewer({ mode: 'default', sortOrder: 0, dataSource: 'local', param: NewsFeedTicker1_Data, target: '_self', dateFormat: 'mm/dd/yy', maxItems: 10});
+   $("#PanelMenu2").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
+   $("#PanelMenu2_markup ul li a").click(function(event)
    {
-      var $obj = $("#wb_Image18");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image18', 'animate-rotate-in-right', 500, 1000);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image18', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image18').inViewPort(true))
-   {
-      $('#wb_Image18').addClass("in-viewport");
-   }
-   onScrollImage18();
-   $(window).scroll(function(event)
-   {
-      onScrollImage18();
+       $.panel.hide($("#PanelMenu2_panel"));
    });
-   function onScrollImage24()
+   $("#PanelMenu3").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
+   $("#PanelMenu3_markup ul li a").click(function(event)
    {
-      var $obj = $("#wb_Image24");
+       $.panel.hide($("#PanelMenu3_panel"));
+   });
+   function onScrollImage1()
+   {
+      var $obj = $("#wb_Image1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Image24', 'animate-fade-in-up', 500, 1000);
+         AnimateCss('Image26', 'animate-fade-in-up', 500, 1000);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image24', 'animate-fade-out', 0, 0);
+         AnimateCss('Image26', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_Image24').inViewPort(true))
+   if (!$('#wb_Image1').inViewPort(true))
    {
-      $('#wb_Image24').addClass("in-viewport");
+      $('#wb_Image1').addClass("in-viewport");
    }
-   onScrollImage24();
+   onScrollImage1();
    $(window).scroll(function(event)
    {
-      onScrollImage24();
+      onScrollImage1();
    });
 });
 </script>
 </head>
 <body>
-<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:229;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:230;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 </div>
 <div id="wb_LayoutGrid9">
 <div id="LayoutGrid9">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image1" style="display:inline-block;width:272px;height:47px;z-index:0;">
-<img src="images/DEH-Innovation-Hub_colour-posivite-2H.png" id="Image1" alt="">
-</div>
 </div>
 <div class="col-2">
+<div id="Html9" style="display:inline-block;width:253px;height:57px;z-index:0">
 </div>
 </div>
 </div>
 </div>
-<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:55px;z-index:229;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
-<div id="PageHeader1_Container" style="width:1202px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Text3" style="position:absolute;left:202px;top:15px;width:799px;height:25px;text-align:center;z-index:1;">
-<span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:21px;"><strong>Innovation HUB</strong></span></div>
-<div id="wb_FontAwesomeIcon3" style="position:absolute;left:442px;top:7px;width:26px;height:26px;text-align:center;z-index:2;">
-<a href="#LayoutGrid9"><div id="FontAwesomeIcon3"><i class="fa fa-home"></i></div></a></div>
-<div id="wb_PanelMenu1" style="position:absolute;left:713px;top:9px;width:35px;height:35px;z-index:3;">
-<a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
-<div id="PanelMenu1_markup">
-<ul role="menu">
-   <li role="menuitem"><a href="./index.html" class="active"></a></li>
-   <li role="menuitem"><a href="https://deidplr.sharepoint.com/teams/ITSH/SitePages/Home.aspx" target="_blank"><i class="fa fa-headphones fa-fw"></i><span>IT Support</span></a></li>
-   <li role="menuitem"><a href="https://innovationhub.dei.gr/el/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>Inoviation HUB (site)</span></a></li>
-   <li role="menuitem"><a href="https://my.dei.gr/sslvpn/Login/Login" target="_blank"><i class="fa fa-user fa-fw"></i><span>My.dei.gr</span></a></li>
-   <li role="menuitem"><a href="https://www.dei.gr/el" target="_blank"><i class="fa fa-lightbulb-o fa-fw"></i><span> &#916;&#917;&#919; &#913;.&#917;.</span></a></li>
-   <li role="menuitem"><a href="https://e-signit.gr/dashboard" target="_blank"><i class="fa fa-sign-in fa-fw"></i><span>e-signit (ADACOM)</span></a></li>
-   <li role="menuitem"><a href="https://papyros.dei.gr/login.jsp?sessionExp=1" target="_blank"><i class="fa fa-product-hunt fa-fw"></i><span>&#928;&#940;&#960;&#965;&#961;&#959;&#962;</span></a></li>
-   <li role="menuitem"><a href="https://mail.google.com/" target="_blank"><i class="fa fa-at fa-fw"></i><span>Gmail</span></a></li>
-   <li role="menuitem"><a href="https://calendar.google.com/calendar/r" target="_blank"><i class="fa fa-calendar fa-fw"></i><span>&#919;&#956;&#949;&#961;&#959;&#955;&#972;&#947;&#953;&#959;</span></a></li>
-   <li role="menuitem"><a href="mailto:"><i class="fa fa-at fa-fw"></i><span>Ms OutLook</span></a></li>
-   <li role="menuitem"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google fa-fw"></i><span>Google Brower</span></a></li>
-   <li role="menuitem"><a href="https://www.google.gr/maps/@37.9920672,23.8525248,15z" target="_blank"><i class="fa fa-map fa-fw"></i><span>&#935;&#940;&#961;&#964;&#949;&#962;</span></a></li>
-   <li role="menuitem"><a href="https://www.transfernow.net/el/" target="_blank"><i class="fa fa-fighter-jet fa-fw"></i><span>WeTranfer</span></a></li>
-   <li role="menuitem"><a href="https://www.plaisio.gr/FindYourCartridge" target="_blank"><i class="fa fa-print fa-fw"></i><span>&#928;&#923;&#913;&#921;&#931;&#921;&#927; (Toner)</span></a></li>
-   <li role="menuitem"><a href="https://www.vrisko.gr/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>vrisko.gr</span></a></li>
-</ul>
 </div>
-</div>
-</div>
+<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:left;left:0;top:0;right:0;height:55px;z-index:230;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+   <div id="wb_Text3" style="position:absolute;left:16%;top:27%;width:66%;height:45%;text-align:center;z-index:1;">
+      <span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:21px;"><strong>Innovation HUB</strong></span></div>
+   <div id="wb_PanelMenu1" style="position:absolute;left:0%;top:16%;width:10%;height:63%;z-index:2;">
+      <a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp; Smart Links</a>
+      <div id="PanelMenu1_markup">
+         <ul role="menu">
+            <li role="menuitem"><a href="./index.html" class="active"></a></li>
+            <li role="menuitem"><a href="https://deidplr.sharepoint.com/teams/ITSH/SitePages/Home.aspx" target="_blank"><i class="fa fa-headphones fa-fw"></i><span>IT Support</span></a></li>
+            <li role="menuitem"><a href="https://innovationhub.dei.gr/el/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>Inoviation HUB (site)</span></a></li>
+            <li role="menuitem"><a href="https://my.dei.gr/sslvpn/Login/Login" target="_blank"><i class="fa fa-user fa-fw"></i><span>My.dei.gr</span></a></li>
+            <li role="menuitem"><a href="https://www.dei.gr/el" target="_blank"><i class="fa fa-lightbulb-o fa-fw"></i><span> &#916;&#917;&#919; &#913;.&#917;.</span></a></li>
+            <li role="menuitem"><a href="https://e-signit.gr/dashboard" target="_blank"><i class="fa fa-sign-in fa-fw"></i><span>e-signit (ADACOM)</span></a></li>
+            <li role="menuitem"><a href="https://papyros.dei.gr/login.jsp?sessionExp=1" target="_blank"><i class="fa fa-product-hunt fa-fw"></i><span>&#928;&#940;&#960;&#965;&#961;&#959;&#962;</span></a></li>
+            <li role="menuitem"><a href="https://mail.google.com/" target="_blank"><i class="fa fa-at fa-fw"></i><span>Gmail</span></a></li>
+            <li role="menuitem"><a href="https://calendar.google.com/calendar/r" target="_blank"><i class="fa fa-calendar fa-fw"></i><span>&#919;&#956;&#949;&#961;&#959;&#955;&#972;&#947;&#953;&#959;</span></a></li>
+            <li role="menuitem"><a href="mailto:"><i class="fa fa-at fa-fw"></i><span>Ms OutLook</span></a></li>
+            <li role="menuitem"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google fa-fw"></i><span>Google Brower</span></a></li>
+            <li role="menuitem"><a href="https://www.google.gr/maps/@37.9920672,23.8525248,15z" target="_blank"><i class="fa fa-map fa-fw"></i><span>&#935;&#940;&#961;&#964;&#949;&#962;</span></a></li>
+            <li role="menuitem"><a href="https://www.transfernow.net/el/" target="_blank"><i class="fa fa-fighter-jet fa-fw"></i><span>WeTranfer</span></a></li>
+            <li role="menuitem"><a href="https://www.plaisio.gr/FindYourCartridge" target="_blank"><i class="fa fa-print fa-fw"></i><span>&#928;&#923;&#913;&#921;&#931;&#921;&#927; (Toner)</span></a></li>
+            <li role="menuitem"><a href="https://www.vrisko.gr/" target="_blank"><i class="fa fa-edge fa-fw"></i><span>vrisko.gr</span></a></li>
+         </ul>
+      </div>
+   </div>
+   <div id="wb_JavaScript1" style="position:absolute;left:85%;top:12%;width:7%;height:34%;z-index:3;">
+      <div style="color:#DCDCDC;font-size:15px;font-family:Times New Roman;font-weight:normal;font-style:normal;text-align:left;text-decoration:none;" id="basicclock"></div>
+      <script>      
+      function clock() 
+      {
+         var digital = new Date();
+         var hours = digital.getHours();
+         var minutes = digital.getMinutes();
+         var seconds = digital.getSeconds();
+         if (minutes <= 9) minutes = "0" + minutes;
+         if (seconds <= 9) seconds = "0" + seconds;
+         dispTime = hours + ":" + minutes + ":" + seconds;
+      
+         var basicclock = document.getElementById('basicclock');
+         basicclock.innerHTML = dispTime;
+         setTimeout("clock()", 1000);
+      }
+      clock();
+      </script>
+
+   </div>
+   <div id="wb_JavaScript2" style="position:absolute;left:81%;top:47%;width:17%;height:38%;z-index:4;">
+      <div style="color:#DCDCDC;font-size:15px;font-family:Times New Roman;font-weight:normal;font-style:normal;text-align:left;text-decoration:none;" id="basicdate"></div>
+      <script>      
+         var now = new Date();
+         var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+         var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+         var date = ((now.getDate() < 10) ? "0" : "") + now.getDate();
+         var year = (now.getYear() < 1000) ? now.getYear() + 1900 : now.getYear();
+         today = days[now.getDay()] + ", " + months[now.getMonth()] + " " + date + ", " + year;
+         var basicdate = document.getElementById('basicdate');
+         basicdate.innerHTML = today;
+      </script>
+
+
+   </div>
 </div>
 <div id="wb_LayoutGrida">
 <div id="LayoutGrida">
@@ -620,9 +574,44 @@ $(document).ready(function()
 <div id="LayoutGridc">
 <div class="row">
 <div class="col-1">
+<div id="wb_Image18" style="display:inline-block;width:100%;height:auto;z-index:5;">
+<img src="images/DEH-Innovation-Hub_colour-posivite-2H.png" id="Image18" alt="">
+</div>
+<div id="Html18" style="display:inline-block;width:35px;height:34px;z-index:6">
+</div>
 </div>
 <div class="col-2">
-<div id="Html9" style="display:inline-block;width:100px;height:369px;z-index:4">
+</div>
+<div class="col-3">
+<div id="Html19" style="display:inline-block;width:253px;height:34px;z-index:7">
+</div>
+<div id="wb_PanelMenu3" style="display:inline-block;width:214px;height:54px;z-index:8;">
+<a href="#PanelMenu3_markup" id="PanelMenu3">&nbsp;&nbsp; &#913;&#957;&#959;&#953;&#967;&#964;&#940; projects</a>
+<div id="PanelMenu3_markup">
+<ul role="menu">
+   <li role="menuitem"><a href=""><i class="fa fa-flag-checkered fa-fw"></i><span>&#934;&#959;&#961;&#941;&#945;&#962; &#917;&#955;&#941;&#947;&#967;&#959;&#965;</span></a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-4">
+<div id="Html15" style="display:inline-block;width:253px;height:34px;z-index:9">
+</div>
+<div id="wb_PanelMenu2" style="display:inline-block;width:214px;height:54px;z-index:10;">
+<a href="#PanelMenu2_markup" id="PanelMenu2">&nbsp;&nbsp;&nbsp; &#922;&#955;&#949;&#953;&#963;&#964;&#940; projects</a>
+<div id="PanelMenu2_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="#LayoutGrid12"><i class="fa fa-file-powerpoint-o fa-fw"></i><span>Lift &amp; Shift iHubERP</span></a></li>
+   <li role="menuitem"><a href="#LayoutGrid41"><i class="fa fa-birthday-cake fa-fw"></i><span>Lift &amp; Shift QUIS</span></a></li>
+   <li role="menuitem"><a href="#LayoutGrid50"><i class="fa fa-folder-open fa-fw"></i><span>List &amp; Shift File Server</span></a></li>
+   <li role="menuitem"><a href="#PageHeader">------------------</a></li>
+   <li role="menuitem"><a href="#LayoutGrid75"><i class="fa fa-sticky-note fa-fw"></i><span>iHub Ticketing</span></a></li>
+</ul>
+</div>
+
+</div>
+<div id="Html16" style="display:inline-block;width:253px;height:237px;z-index:11">
 </div>
 </div>
 </div>
@@ -636,12 +625,20 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text51">
-<span style="color:#87CEEB;font-family:'Trebuchet MS';font-size:17px;"><em><u>Μεγάλα Projects</u></em></span>
+<div id="wb_Image1" style="display:inline-block;width:119px;height:121px;z-index:12;">
+<a href="#PageHeader"><img src="images/ERPHelpDesk.png" id="Image1" alt=""></a>
 </div>
 </div>
 <div class="col-2">
@@ -653,74 +650,53 @@ $(document).ready(function()
 <div id="LayoutGridd">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image23" style="display:inline-block;width:106px;height:80px;z-index:6;">
-<a href="#LayoutGrid12"><img src="images/ihub3.png" id="Image23" alt=""></a>
-</div>
-<div id="wb_Text50">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Lift &amp; Shift<br>iHub ERP</strong></span>
+<div id="wb_Text40">
+<span style="color:#A52A2A;font-family:Arial;font-size:29px;"><strong>iHub Ticketing</strong></span>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image24" style="display:inline-block;width:75px;height:75px;z-index:8;">
-<a href="#LayoutGrid41"><img src="images/Quis.png" id="Image24" alt=""></a>
-</div>
-<div id="wb_Text52">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Lift &amp; Shift<br>QUIS</strong></span>
-</div>
 </div>
 <div class="col-3">
-<div id="wb_Image25" style="display:inline-block;width:147px;height:98px;z-index:10;">
-<a href="#LayoutGrid50"><img src="images/fser.jpg" id="Image25" alt=""></a>
-</div>
-<div id="wb_Text53">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Lift &amp; Shift<br>File Server</strong></span>
-</div>
 </div>
 <div class="col-4">
-<div id="wb_Image27" style="display:inline-block;width:113px;height:83px;z-index:12;">
-<a href="#LayoutGrid94"><img src="images/ERPexam_r.png" id="Image27" alt=""></a>
+</div>
+<div class="col-5">
+<div id="wb_Image27" style="display:inline-block;width:105px;height:77px;z-index:14;">
+<a href="#PageHeader"><img src="images/ERPexam_r.png" id="Image27" alt=""></a>
 </div>
 <div id="wb_Text55">
 <span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Πιστοποίηση<br>Προσώπων</strong></span>
 </div>
 </div>
-<div class="col-5">
-<div id="wb_Image26" style="display:inline-block;width:82px;height:83px;z-index:14;">
-<a href="#LayoutGrid75"><img src="images/ERPHelpDesk.png" id="Image26" alt=""></a>
-</div>
-<div id="wb_Text54">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>iHub<br>Ticketing</strong></span>
-</div>
-</div>
 <div class="col-6">
-<div id="wb_Image18" style="display:inline-block;width:170px;height:94px;z-index:16;">
-<a href="#PageHeader"><img src="images/images1.jpg" id="Image18" alt=""></a>
+<div id="wb_Image23" style="display:inline-block;width:106px;height:80px;z-index:16;">
+<a href="#PageHeader"><img src="images/ihub3.png" id="Image23" alt=""></a>
 </div>
-<div id="wb_Text40">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Εφαρμογές</strong></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:331px;z-index:132;" title="Social Media Sticky">
-<a href="#PageHeader" title="aaaaa"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:178px;width:150px;height:45px;z-index:18"></a>
-<a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:223px;width:150px;height:45px;z-index:19"></a>
-</div>
-<div id="wb_LayoutGrid10">
-<div id="LayoutGrid10">
-<div class="row">
-<div class="col-1">
-<div id="Html4" style="display:inline-block;width:51px;height:901px;z-index:20">
+<div id="wb_Text50">
+<span style="color:#00008B;font-family:'Trebuchet MS';font-size:19px;"><strong>iHubERP</strong></span>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:404px;z-index:133;" title="Social Media Sticky">
+<a href="#PageHeader" title="aaaaa"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:251px;width:150px;height:45px;z-index:18"></a>
+<a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:296px;width:150px;height:45px;z-index:19"></a>
 </div>
 <div id="wb_LayoutGrid11">
 <div id="LayoutGrid11">
 <div class="row">
 <div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<div id="Html4" style="display:inline-block;width:148px;height:1075px;z-index:20">
+</div>
 </div>
 </div>
 </div>
@@ -754,14 +730,6 @@ $(document).ready(function()
 <div id="wb_Image3" style="display:inline-block;width:56px;height:42px;z-index:24;">
 <img src="images/ihub3.png" id="Image3" alt="">
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid13">
-<div id="LayoutGrid13">
-<div class="row">
-<div class="col-1">
 </div>
 </div>
 </div>
@@ -1875,6 +1843,8 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+</div>
+<div id="NewsFeedTicker1" style="overflow:hidden;position:absolute;left:1261px;top:12685px;width:82px;height:82px;z-index:229;">
 </div>
 </body>
 </html>
