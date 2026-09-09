@@ -291,13 +291,13 @@ body
 }
 #PanelMenu1
 {
-   padding-right: 30px;
+   padding-left: 30px;
 }
 #PanelMenu1:after
 {
    position: absolute;
    top: 50%;
-   right: 8px;
+   left: 8px;
    width: 22px;
    height: 22px;
    margin-top: -11px;
@@ -310,7 +310,7 @@ body
 #PanelMenu1
 {
    line-height: 35px;
-   width: 91px;
+   width: 97px;
    height: 35px;
    position: absolute;
    z-index: 999;
@@ -585,7 +585,7 @@ body
 #LayoutGrid1
 {
    box-sizing: border-box;
-   padding: 10px 15px 10px 15px;
+   padding: 20px 15px 20px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -594,7 +594,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2, #LayoutGrid1 > .row > .col-3, #LayoutGrid1 > .row > .col-4, #LayoutGrid1 > .row > .col-5, #LayoutGrid1 > .row > .col-6
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -603,7 +603,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2, #LayoutGrid1 > .row > .col-3, #LayoutGrid1 > .row > .col-4, #LayoutGrid1 > .row > .col-5, #LayoutGrid1 > .row > .col-6
 {
    float: left;
 }
@@ -620,8 +620,40 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 83.33333333%;
+   width: 16.66666667%;
    text-align: left;
+}
+#LayoutGrid1 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: left;
+}
+#LayoutGrid1 > .row > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: left;
+}
+#LayoutGrid1 > .row > .col-5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: center;
+}
+#LayoutGrid1 > .row > .col-6
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: center;
 }
 #LayoutGrid1:before,
 #LayoutGrid1:after,
@@ -638,7 +670,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2
+#LayoutGrid1 > .row > .col-1, #LayoutGrid1 > .row > .col-2, #LayoutGrid1 > .row > .col-3, #LayoutGrid1 > .row > .col-4, #LayoutGrid1 > .row > .col-5, #LayoutGrid1 > .row > .col-6
 {
    float: none;
    width: 100% !important;
@@ -661,7 +693,7 @@ body
 #LayoutGridd
 {
    box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
+   padding: 10px 15px 30px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -9410,8 +9442,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 82px;
-   height: 56px;
+   width: 131px;
+   height: 93px;
    vertical-align: top;
 }
 #wb_Image23
@@ -9433,7 +9465,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   padding: 15px 3px 10px 3px;
+   padding: 0;
    margin: 0;
    text-align: center;
 }
@@ -9452,8 +9484,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 81px;
-   height: 53px;
+   width: 140px;
+   height: 97px;
    vertical-align: top;
 }
 #wb_Image27
@@ -9475,7 +9507,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   padding: 14px 3px 0px 3px;
+   padding: 0;
    margin: 0;
    text-align: center;
 }
@@ -9704,7 +9736,7 @@ body
    color: #F7F7F7;
    border: 3px solid #D3D3D3;
    border-radius: 6px;
-   background-color: #FF0000;
+   background-color: #C71585;
    font-family: "Trebuchet MS";
    font-weight: normal;
    font-size: 16px;
