@@ -329,101 +329,6 @@ body
    vertical-align: middle;
    line-height: 22px;
 }
-#wb_LayoutGridc
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: url(images/R.jpg);
-   background-repeat: round;
-   background-position: center top;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGridc
-{
-   box-sizing: border-box;
-   padding: 20px 15px 20px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGridc > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
-{
-   float: left;
-}
-#LayoutGridc > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 33.33333333%;
-   text-align: center;
-}
-#LayoutGridc > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 33.33333333%;
-   text-align: center;
-}
-#LayoutGridc > .row > .col-3
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 33.33333333%;
-   text-align: center;
-}
-#LayoutGridc:before,
-#LayoutGridc:after,
-#LayoutGridc .row:before,
-#LayoutGridc .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGridc:after,
-#LayoutGridc .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#LayoutGridc-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background: linear-gradient(to bottom, #FFFFFF 0%, rgba(255,255,255,0.00) 100%);
-}
 #wb_LayoutGridb
 {
    clear: both;
@@ -775,6 +680,101 @@ body
    float: none;
    width: 100% !important;
 }
+}
+#wb_LayoutGridc
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url(images/R.jpg);
+   background-repeat: round;
+   background-position: center top;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGridc
+{
+   box-sizing: border-box;
+   padding: 30px 15px 40px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGridc > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
+{
+   float: left;
+}
+#LayoutGridc > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#LayoutGridc > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#LayoutGridc > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: center;
+}
+#LayoutGridc:before,
+#LayoutGridc:after,
+#LayoutGridc .row:before,
+#LayoutGridc .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGridc:after,
+#LayoutGridc .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#LayoutGridc-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(to bottom, #FFFFFF 0%, rgba(255,255,255,0.00) 100%);
 }
 #socialmedia_sticky
 {
@@ -9950,20 +9950,6 @@ body
    height: 49px;
    position: absolute;
    z-index: 999;
-}
-#PanelMenu3_markup ul li i
-{
-   font-size: 26px;
-   padding: 0px 10px 0px 0px;
-   vertical-align: middle;
-   width: 26px;
-}
-#PanelMenu3_markup span
-{
-   display: inline-block;
-   height: 26px;
-   vertical-align: middle;
-   line-height: 26px;
 }
 #wb_Image1
 {
