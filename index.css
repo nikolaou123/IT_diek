@@ -29,7 +29,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #708090;
+   background-color: #FFFFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -99,7 +99,7 @@ body
 }
 #PageHeader1
 {
-   background-color: #212121;
+   background-color: #FFFFFF;
    background-image: none;
    box-sizing: border-box;
 }
@@ -252,7 +252,7 @@ body
    color: #FFFFFF;
    border: 1px solid transparent;
    background-color: #000000;
-   background: linear-gradient(to top, #000000 0%, #778899 100%);
+   background: linear-gradient(to top, #000000 0%, #006199 100%);
    font-family: Arial;
    font-weight: normal;
    font-size: 15px;
@@ -261,7 +261,7 @@ body
 }
 #wb_PanelMenu1 a
 {
-   color: #708090;
+   color: #006199;
    border: 1px solid #DCDCDC;
    border-radius: 5px;
    background-color: #FFFFFF;
@@ -357,7 +357,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3, #LayoutGridc > .row > .col-4
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -366,7 +366,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3, #LayoutGridc > .row > .col-4
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
 {
    float: left;
 }
@@ -375,7 +375,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 25%;
+   width: 33.33333333%;
    text-align: center;
 }
 #LayoutGridc > .row > .col-2
@@ -383,7 +383,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 25%;
+   width: 33.33333333%;
    text-align: center;
 }
 #LayoutGridc > .row > .col-3
@@ -391,15 +391,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 25%;
-   text-align: center;
-}
-#LayoutGridc > .row > .col-4
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 25%;
+   width: 33.33333333%;
    text-align: center;
 }
 #LayoutGridc:before,
@@ -417,7 +409,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3, #LayoutGridc > .row > .col-4
+#LayoutGridc > .row > .col-1, #LayoutGridc > .row > .col-2, #LayoutGridc > .row > .col-3
 {
    float: none;
    width: 100% !important;
@@ -621,7 +613,7 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 16.66666667%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid1 > .row > .col-3
 {
@@ -629,7 +621,7 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 16.66666667%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid1 > .row > .col-4
 {
@@ -637,14 +629,14 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 16.66666667%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid1 > .row > .col-5
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 16.66666667%;
+   width: 8.33333333%;
    text-align: center;
 }
 #LayoutGrid1 > .row > .col-6
@@ -652,7 +644,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 16.66666667%;
+   width: 25%;
    text-align: center;
 }
 #LayoutGrid1:before,
@@ -752,7 +744,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 16.66666667%;
+   width: 8.33333333%;
    text-align: center;
 }
 #LayoutGridd > .row > .col-6
@@ -760,7 +752,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 16.66666667%;
+   width: 25%;
    text-align: center;
 }
 #LayoutGridd:before,
@@ -836,7 +828,7 @@ body
 #LayoutGrid11
 {
    box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
+   padding: 50px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -904,7 +896,7 @@ body
 #LayoutGrid13
 {
    box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
+   padding: 20px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -913,7 +905,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid13 > .row > .col-1
+#LayoutGrid13 > .row > .col-1, #LayoutGrid13 > .row > .col-2, #LayoutGrid13 > .row > .col-3
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -922,7 +914,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid13 > .row > .col-1
+#LayoutGrid13 > .row > .col-1, #LayoutGrid13 > .row > .col-2, #LayoutGrid13 > .row > .col-3
 {
    float: left;
 }
@@ -931,8 +923,24 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: center;
+   width: 25%;
+   text-align: left;
+}
+#LayoutGrid13 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 50%;
+   text-align: left;
+}
+#LayoutGrid13 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: right;
 }
 #LayoutGrid13:before,
 #LayoutGrid13:after,
@@ -949,7 +957,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGrid13 > .row > .col-1
+#LayoutGrid13 > .row > .col-1, #LayoutGrid13 > .row > .col-2, #LayoutGrid13 > .row > .col-3
 {
    float: none;
    width: 100% !important;
@@ -9733,10 +9741,10 @@ body
 }
 #wb_PanelMenu2 a
 {
-   color: #F7F7F7;
+   color: #006199;
    border: 3px solid #D3D3D3;
    border-radius: 6px;
-   background-color: #C71585;
+   background-color: #DCDCDC;
    font-family: "Trebuchet MS";
    font-weight: normal;
    font-size: 16px;
@@ -9781,9 +9789,9 @@ body
 }
 #PanelMenu2
 {
-   line-height: 54px;
-   width: 172px;
-   height: 54px;
+   line-height: 49px;
+   width: 202px;
+   height: 49px;
    position: absolute;
    z-index: 999;
 }
@@ -9889,10 +9897,10 @@ body
 }
 #wb_PanelMenu3 a
 {
-   color: #F7F7F7;
+   color: #006199;
    border: 3px solid #D3D3D3;
    border-radius: 6px;
-   background-color: #20B2AA;
+   background-color: #FFFFFF;
    font-family: "Trebuchet MS";
    font-weight: normal;
    font-size: 16px;
@@ -9937,9 +9945,9 @@ body
 }
 #PanelMenu3
 {
-   line-height: 54px;
-   width: 172px;
-   height: 54px;
+   line-height: 49px;
+   width: 202px;
+   height: 49px;
    position: absolute;
    z-index: 999;
 }
