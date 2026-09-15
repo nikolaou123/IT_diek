@@ -392,7 +392,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: transparent;
+   background-color: #F5F5F5;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -401,7 +401,7 @@ body
 #LayoutGrid10
 {
    box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
+   padding: 20px 15px 20px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -477,7 +477,7 @@ body
 #LayoutGrid1
 {
    box-sizing: border-box;
-   padding: 20px 15px 10px 15px;
+   padding: 20px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -576,7 +576,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #F5F5F5;
+   background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -585,7 +585,7 @@ body
 #LayoutGridd
 {
    box-sizing: border-box;
-   padding: 20px 15px 20px 15px;
+   padding: 5px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -693,7 +693,7 @@ body
 #LayoutGridc
 {
    box-sizing: border-box;
-   padding: 10px 15px 0px 15px;
+   padding: 0px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -836,7 +836,7 @@ body
 #LayoutGrid11
 {
    box-sizing: border-box;
-   padding: 20px 15px 20px 15px;
+   padding: 5px 15px 5px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -845,7 +845,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6, #LayoutGrid11 > .row > .col-7
+#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -854,7 +854,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6, #LayoutGrid11 > .row > .col-7
+#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6
 {
    float: left;
 }
@@ -903,15 +903,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 8.33333333%;
-   text-align: left;
-}
-#LayoutGrid11 > .row > .col-7
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 8.33333333%;
+   width: 16.66666667%;
    text-align: left;
 }
 #LayoutGrid11:before,
@@ -929,7 +921,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6, #LayoutGrid11 > .row > .col-7
+#LayoutGrid11 > .row > .col-1, #LayoutGrid11 > .row > .col-2, #LayoutGrid11 > .row > .col-3, #LayoutGrid11 > .row > .col-4, #LayoutGrid11 > .row > .col-5, #LayoutGrid11 > .row > .col-6
 {
    float: none;
    width: 100% !important;
@@ -988,7 +980,7 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 50%;
-   text-align: left;
+   text-align: right;
 }
 #LayoutGrid13 > .row > .col-3
 {
@@ -9448,8 +9440,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 131px;
-   height: 93px;
+   width: 133px;
+   height: 95px;
    vertical-align: top;
 }
 #wb_Image23
@@ -9477,8 +9469,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 140px;
-   height: 97px;
+   width: 138px;
+   height: 95px;
    vertical-align: top;
 }
 #wb_Image27
@@ -9762,7 +9754,7 @@ body
 #PanelMenu2
 {
    line-height: 49px;
-   width: 202px;
+   width: 172px;
    height: 49px;
    position: absolute;
    z-index: 999;
@@ -9917,7 +9909,7 @@ body
 #PanelMenu3
 {
    line-height: 49px;
-   width: 202px;
+   width: 172px;
    height: 49px;
    position: absolute;
    z-index: 999;
@@ -9933,8 +9925,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 93px;
-   height: 95px;
+   width: 89px;
+   height: 91px;
    vertical-align: top;
 }
 #wb_Image1
@@ -9998,7 +9990,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
-   padding: 0;
+   padding: 10px 0px 10px 0px;
    margin: 0;
    text-align: center;
 }
@@ -10011,7 +10003,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
-   padding: 0;
+   padding: 10px 0px 10px 0px;
    margin: 0;
    text-align: center;
 }
@@ -10024,7 +10016,7 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
-   padding: 0;
+   padding: 10px 0px 10px 0px;
    margin: 0;
    text-align: center;
 }
