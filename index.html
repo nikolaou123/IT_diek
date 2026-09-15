@@ -31,7 +31,7 @@ $(document).ready(function()
    $('#wb_Image15').addClass('visibility-hidden');
    $('#wb_Image23').addClass('visibility-hidden');
    $('#wb_Image27').addClass('visibility-hidden');
-   $('#Image26').addClass('visibility-hidden');
+   $('#wb_Image1').addClass('visibility-hidden');
    function skrollrInit()
    {
       skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
@@ -402,7 +402,7 @@ $(document).ready(function()
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Image23', 'animate-fade-in-down', 500, 1000);
+         AnimateCss('wb_Image23', 'animate-fade-in-up', 500, 1000);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
@@ -463,13 +463,13 @@ $(document).ready(function()
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('Image26', 'animate-fade-in-up', 500, 1000);
+         AnimateCss('wb_Image1', 'animate-fade-in-up', 500, 1000);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('Image26', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Image1', 'animate-fade-out', 0, 0);
       }
    }
    if (!$('#wb_Image1').inViewPort(true))
@@ -481,28 +481,30 @@ $(document).ready(function()
    {
       onScrollImage1();
    });
+   $("#SlideShow1").conveyerbelt({speed:1, spacing: 150});
 });
 </script>
 </head>
 <body>
-<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:227;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:232;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 </div>
 <div id="wb_LayoutGrid9">
 <div id="LayoutGrid9">
 <div class="row">
 <div class="col-1">
+<div id="Html9" style="display:inline-block;width:52px;height:58px;z-index:0">
+</div>
 </div>
 <div class="col-2">
-<div id="Html9" style="display:inline-block;width:253px;height:118px;z-index:0">
+<div id="wb_Image18" style="display:inline-block;width:451px;height:56px;z-index:1;">
+<img src="images/DEH-Innovation-Hub_colour-posivite-2H.png" id="Image18" alt="">
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:left;left:0;top:0;right:0;height:55px;z-index:227;" data-top="background:rgba(233, 233,233, 0.0);" data--50-top="background:rgba(233, 233, 233, 1.0);">
-   <div id="wb_Text3" style="position:absolute;left:16%;top:27%;width:66%;height:45%;text-align:center;z-index:1;">
-      <span style="color:#006199;font-family:'Trebuchet MS';font-size:21px;"><strong>Innovation HUB</strong></span></div>
-   <div id="wb_PanelMenu1" style="position:absolute;left:0%;top:16%;width:10%;height:63%;z-index:2;">
+<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:left;left:0;top:0;right:0;height:55px;z-index:232;" data-top="background:rgba(233, 233,233, 0.0);" data--50-top="background:rgba(233, 233, 233, 1.0);">
+   <div id="wb_PanelMenu1" style="position:absolute;left:1%;top:16%;width:10%;height:63%;z-index:2;">
       <a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp; Smart Links</a>
       <div id="PanelMenu1_markup">
          <ul role="menu">
@@ -524,7 +526,7 @@ $(document).ready(function()
          </ul>
       </div>
    </div>
-   <div id="wb_JavaScript1" style="position:absolute;left:81%;top:12%;width:11%;height:34%;z-index:3;">
+   <div id="wb_JavaScript1" style="position:absolute;left:81%;top:23%;width:11%;height:34%;z-index:3;">
       <div style="color:#006199;font-size:13px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none;" id="basicclock"></div>
       <script>      
       function clock() 
@@ -545,7 +547,7 @@ $(document).ready(function()
       </script>
 
    </div>
-   <div id="wb_JavaScript2" style="position:absolute;left:81%;top:47%;width:17%;height:38%;z-index:4;">
+   <div id="wb_JavaScript2" style="position:absolute;left:81%;top:52%;width:17%;height:38%;z-index:4;">
       <div style="color:#006199;font-size:13px;font-family:Arial;font-weight:normal;font-style:normal;text-align:left;text-decoration:none;" id="basicdate"></div>
       <script>      
          var now = new Date();
@@ -573,6 +575,18 @@ $(document).ready(function()
 <div id="LayoutGridb">
 <div class="row">
 <div class="col-1">
+<ul id="SlideShow1" style="overflow:hidden;z-index:5;">
+<li><img class="image" src="images/image1.png" alt="" title=""></li>
+<li><img class="image" src="images/image2.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image3.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image4.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image5.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image6.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image7.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image8.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/image9.png" style="display:none;" alt="" title=""></li>
+<li><img class="image" src="images/ppc-training-course-advansys.png" style="display:none;" alt="" title=""></li>
+</ul>
 </div>
 </div>
 </div>
@@ -582,6 +596,8 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 </div>
+<div class="col-2">
+</div>
 </div>
 </div>
 </div>
@@ -589,63 +605,34 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image23" style="display:inline-block;width:155px;height:117px;z-index:5;">
+<div id="wb_Image23" style="display:inline-block;width:155px;height:117px;z-index:6;">
 <a href="#PageHeader"><img src="images/ihub3.png" id="Image23" alt=""></a>
 </div>
+<div id="wb_Text3">
+<span style="color:#5F9EA0;font-family:'Trebuchet MS';font-size:19px;"><strong>iHub ERP</strong></span>
+</div>
 </div>
 <div class="col-2">
-<div id="wb_Image27" style="display:inline-block;width:164px;height:121px;z-index:6;">
+<div id="wb_Image27" style="display:inline-block;width:164px;height:121px;z-index:8;">
 <a href="#PageHeader"><img src="images/ERPexam_r.png" id="Image27" alt=""></a>
 </div>
+<div id="wb_Text41">
+<span style="color:#5F9EA0;font-family:'Trebuchet MS';font-size:19px;"><strong>iHub Exams</strong></span>
+</div>
 </div>
 <div class="col-3">
-</div>
-<div class="col-4">
-<div id="wb_Image1" style="display:inline-block;width:119px;height:121px;z-index:7;">
+<div id="wb_Image1" style="display:inline-block;width:121px;height:123px;z-index:10;">
 <a href="#LayoutGrid75"><img src="images/ERPHelpDesk.png" id="Image1" alt=""></a>
 </div>
+<div id="wb_Text42">
+<span style="color:#5F9EA0;font-family:'Trebuchet MS';font-size:19px;"><strong>iHub Ticketing</strong></span>
 </div>
-<div class="col-5">
-</div>
-<div class="col-6">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGridd">
-<div id="LayoutGridd">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text50">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:19px;"><strong>iHubERP</strong></span>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text55">
-<span style="color:#00008B;font-family:'Trebuchet MS';font-size:20px;"><strong>Πιστοποίηση<br>Προσώπων</strong></span>
-</div>
-</div>
-<div class="col-3">
 </div>
 <div class="col-4">
-<div id="wb_Text40">
-<span style="color:#000080;font-family:Arial;font-size:21px;"><strong>iHub Ticketing</strong></span>
-</div>
 </div>
 <div class="col-5">
 </div>
 <div class="col-6">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGridc">
-<div id="LayoutGridc-overlay"></div>
-<div id="LayoutGridc">
-<div class="row">
-<div class="col-1">
-<div id="Html18" style="display:inline-block;width:370px;height:431px;z-index:11">
-</div>
 <div id="wb_PanelMenu3" style="display:inline-block;width:244px;height:49px;z-index:12;">
 <a href="#PanelMenu3_markup" id="PanelMenu3">&nbsp;&nbsp; &#913;&#957;&#959;&#953;&#967;&#964;&#940; projects</a>
 <div id="PanelMenu3_markup">
@@ -656,16 +643,9 @@ $(document).ready(function()
 </div>
 
 </div>
+<div id="Html15" style="display:inline-block;width:270px;height:29px;z-index:13">
 </div>
-<div class="col-2">
-<div id="wb_Image18" style="display:inline-block;width:100%;height:auto;z-index:13;">
-<img src="images/DEH-Innovation-Hub_colour-posivite-2H.png" id="Image18" alt="">
-</div>
-</div>
-<div class="col-3">
-<div id="Html17" style="display:inline-block;width:370px;height:431px;z-index:14">
-</div>
-<div id="wb_PanelMenu2" style="display:inline-block;width:244px;height:49px;z-index:15;">
+<div id="wb_PanelMenu2" style="display:inline-block;width:244px;height:49px;z-index:14;">
 <a href="#PanelMenu2_markup" id="PanelMenu2">&nbsp;&nbsp;&nbsp; &#922;&#955;&#949;&#953;&#963;&#964;&#940; projects</a>
 <div id="PanelMenu2_markup">
 <ul role="menu">
@@ -682,14 +662,75 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:404px;z-index:130;" title="Social Media Sticky">
-<a href="#PageHeader" title="aaaaa"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:251px;width:150px;height:45px;z-index:16"></a>
-<a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:296px;width:150px;height:45px;z-index:17"></a>
+<div id="wb_LayoutGridd">
+<div id="LayoutGridd">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text40">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:19px;"><strong>Office 365<br>VBA For App</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text43">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:19px;"><strong>Office 365<br>VBA For App</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text44">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:19px;"><strong>Office 365<br>VBA For App</strong></span>
+</div>
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGridc">
+<div id="LayoutGridc-overlay"></div>
+<div id="LayoutGridc">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+</div>
+</div>
+</div>
+<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:404px;z-index:135;" title="Social Media Sticky">
+<a href="#PageHeader" title="aaaaa"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:251px;width:150px;height:45px;z-index:18"></a>
+<a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:296px;width:150px;height:45px;z-index:19"></a>
 </div>
 <div id="wb_LayoutGrid11">
 <div id="LayoutGrid11">
 <div class="row">
 <div class="col-1">
+<input type="submit" id="Button2" name="" value="Read More" style="display:inline-block;width:123px;height:35px;z-index:20;">
+</div>
+<div class="col-2">
+<input type="submit" id="Button3" name="" value="Read More" style="display:inline-block;width:123px;height:35px;z-index:21;">
+</div>
+<div class="col-3">
+<a id="Button4" href="#LayoutGrid75" style="display:inline-block;width:121px;height:33px;z-index:22;">Read More</a>
+</div>
+<div class="col-4">
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+</div>
+<div class="col-7">
 </div>
 </div>
 </div>
@@ -700,7 +741,7 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<div id="Html4" style="display:inline-block;width:148px;height:1075px;z-index:18">
+<div id="Html4" style="display:inline-block;width:148px;height:1075px;z-index:23">
 </div>
 </div>
 <div class="col-3">
@@ -712,7 +753,7 @@ $(document).ready(function()
 <div id="LayoutGrid12">
 <div class="row">
 <div class="col-1">
-<div id="Html10" style="display:inline-block;width:148px;height:49px;z-index:19">
+<div id="Html10" style="display:inline-block;width:148px;height:49px;z-index:24">
 </div>
 </div>
 <div class="col-2">
@@ -724,7 +765,7 @@ $(document).ready(function()
 <div id="LayoutGrid14">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:20;">
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:25;">
 <a href="./index.html#PageHeader"><div id="FontAwesomeIcon1"><i class="fa fa-home"></i></div></a>
 </div>
 </div>
@@ -734,7 +775,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image3" style="display:inline-block;width:56px;height:42px;z-index:22;">
+<div id="wb_Image3" style="display:inline-block;width:56px;height:42px;z-index:27;">
 <img src="images/ihub3.png" id="Image3" alt="">
 </div>
 </div>
@@ -777,7 +818,7 @@ $(document).ready(function()
 <div id="LayoutGrid16">
 <div class="row">
 <div class="col-1">
-<ul id="SlideShow3" style="overflow:hidden;z-index:23;">
+<ul id="SlideShow3" style="overflow:hidden;z-index:28;">
 <li><img class="image" src="images/IA.png" alt="" title=""></li>
 <li><img class="image" src="images/EP.png" style="display:none;" alt="" title=""></li>
 <li><img class="image" src="images/TA.png" style="display:none;" alt="" title=""></li>
@@ -805,7 +846,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
 </div>
 <input id="DatePicker4_input" name="DatePicker4" style="display:none" type="text" value="12/12/2024">
-<div id="DatePicker4" style="display:inline-block;width:168px;height:250px;z-index:25;">
+<div id="DatePicker4" style="display:inline-block;width:168px;height:250px;z-index:30;">
 </div>
 </div>
 <div class="col-2">
@@ -813,7 +854,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
 </div>
 <input id="DatePicker7_input" name="DatePicker4" style="display:none" type="text" value="4/1/2025">
-<div id="DatePicker7" style="display:inline-block;width:168px;height:250px;z-index:27;">
+<div id="DatePicker7" style="display:inline-block;width:168px;height:250px;z-index:32;">
 </div>
 </div>
 <div class="col-3">
@@ -821,7 +862,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Οριστικοποίηση</u></span>
 </div>
 <input id="DatePicker5_input" name="DatePicker4" style="display:none" type="text" value="8/31/2025">
-<div id="DatePicker5" style="display:inline-block;width:168px;height:250px;z-index:29;">
+<div id="DatePicker5" style="display:inline-block;width:168px;height:250px;z-index:34;">
 </div>
 </div>
 <div class="col-4">
@@ -844,7 +885,7 @@ $(document).ready(function()
 <div id="LayoutGrid20">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image11" style="display:inline-block;width:106px;height:106px;z-index:31;">
+<div id="wb_Image11" style="display:inline-block;width:106px;height:106px;z-index:36;">
 <img src="images/icons8-design-100.png" id="Image11" alt="">
 </div>
 <div id="wb_Text12">
@@ -852,7 +893,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_PanelImageLL" style="display:inline-block;width:106px;height:106px;z-index:33;">
+<div id="wb_PanelImageLL" style="display:inline-block;width:106px;height:106px;z-index:38;">
 <img src="images/icons8-database-administrator-100.png" id="PanelImageLL" alt="">
 </div>
 <div id="wb_Text22">
@@ -860,7 +901,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image8" style="display:inline-block;width:106px;height:106px;z-index:35;">
+<div id="wb_Image8" style="display:inline-block;width:106px;height:106px;z-index:40;">
 <img src="images/icons8-upload-to-cloud-100.png" id="Image8" alt="">
 </div>
 <div id="wb_Text8">
@@ -868,7 +909,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-4">
-<div id="wb_Image9" style="display:inline-block;width:106px;height:106px;z-index:37;">
+<div id="wb_Image9" style="display:inline-block;width:106px;height:106px;z-index:42;">
 <img src="images/icons8-network-cable-100.png" id="Image9" alt="">
 </div>
 <div id="wb_Text9">
@@ -876,7 +917,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-5">
-<div id="wb_Image10" style="display:inline-block;width:106px;height:106px;z-index:39;">
+<div id="wb_Image10" style="display:inline-block;width:106px;height:106px;z-index:44;">
 <img src="images/icons8-update-100.png" id="Image10" alt="">
 </div>
 <div id="wb_Text10">
@@ -884,7 +925,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-6">
-<div id="wb_Image12" style="display:inline-block;width:106px;height:106px;z-index:41;">
+<div id="wb_Image12" style="display:inline-block;width:106px;height:106px;z-index:46;">
 <img src="images/icons8-support-100.png" id="Image12" alt="">
 </div>
 <div id="wb_Text13">
@@ -990,7 +1031,7 @@ $(document).ready(function()
 <div id="LayoutGrid26">
 <div class="row">
 <div class="col-1">
-<div id="Html2" style="display:inline-block;width:100px;height:868px;z-index:49">
+<div id="Html2" style="display:inline-block;width:100px;height:868px;z-index:54">
 </div>
 </div>
 </div>
@@ -1000,7 +1041,7 @@ $(document).ready(function()
 <div id="LayoutGrid32">
 <div class="row">
 <div class="col-1">
-<div id="Html11" style="display:inline-block;width:148px;height:64px;z-index:50">
+<div id="Html11" style="display:inline-block;width:148px;height:64px;z-index:55">
 </div>
 </div>
 </div>
@@ -1058,7 +1099,7 @@ $(document).ready(function()
 <div id="LayoutGrid41">
 <div class="row">
 <div class="col-1">
-<div id="Html6" style="display:inline-block;width:148px;height:49px;z-index:51">
+<div id="Html6" style="display:inline-block;width:148px;height:49px;z-index:56">
 </div>
 </div>
 </div>
@@ -1068,7 +1109,7 @@ $(document).ready(function()
 <div id="LayoutGrid33">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:52;">
+<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:57;">
 <a href="./index.html#PageHeader"><div id="FontAwesomeIcon2"><i class="fa fa-home"></i></div></a>
 </div>
 </div>
@@ -1078,7 +1119,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image2" style="display:inline-block;width:39px;height:39px;z-index:54;">
+<div id="wb_Image2" style="display:inline-block;width:39px;height:39px;z-index:59;">
 <img src="images/Quis.png" id="Image2" alt="">
 </div>
 </div>
@@ -1093,7 +1134,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
 </div>
 <input id="DatePicker9_input" name="DatePicker4" style="display:none" type="text" value="1/1/2026">
-<div id="DatePicker9" style="display:inline-block;width:168px;height:250px;z-index:56;">
+<div id="DatePicker9" style="display:inline-block;width:168px;height:250px;z-index:61;">
 </div>
 </div>
 <div class="col-2">
@@ -1101,7 +1142,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
 </div>
 <input id="DatePicker10_input" name="DatePicker4" style="display:none" type="text" value="4/19/2026">
-<div id="DatePicker10" style="display:inline-block;width:168px;height:250px;z-index:58;">
+<div id="DatePicker10" style="display:inline-block;width:168px;height:250px;z-index:63;">
 </div>
 </div>
 <div class="col-3">
@@ -1127,7 +1168,7 @@ $(document).ready(function()
 <div id="LayoutGrid43">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image13" style="display:inline-block;width:106px;height:106px;z-index:61;">
+<div id="wb_Image13" style="display:inline-block;width:106px;height:106px;z-index:66;">
 <img src="images/icons8-database-administrator-100.png" id="Image13" alt="">
 </div>
 <div id="wb_Text27">
@@ -1135,7 +1176,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image14" style="display:inline-block;width:106px;height:106px;z-index:63;">
+<div id="wb_Image14" style="display:inline-block;width:106px;height:106px;z-index:68;">
 <img src="images/icons8-upload-to-cloud-100.png" id="Image14" alt="">
 </div>
 <div id="wb_Text29">
@@ -1143,7 +1184,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image15" style="display:inline-block;width:106px;height:106px;z-index:65;">
+<div id="wb_Image15" style="display:inline-block;width:106px;height:106px;z-index:70;">
 <img src="images/icons8-update-100.png" id="Image15" alt="">
 </div>
 <div id="wb_Text31">
@@ -1266,7 +1307,7 @@ $(document).ready(function()
 <div id="LayoutGrid49">
 <div class="row">
 <div class="col-1">
-<div id="Html3" style="display:inline-block;width:100px;height:608px;z-index:70">
+<div id="Html3" style="display:inline-block;width:100px;height:608px;z-index:75">
 </div>
 </div>
 </div>
@@ -1276,7 +1317,7 @@ $(document).ready(function()
 <div id="LayoutGrid50">
 <div class="row">
 <div class="col-1">
-<div id="Html12" style="display:inline-block;width:148px;height:64px;z-index:71">
+<div id="Html12" style="display:inline-block;width:148px;height:64px;z-index:76">
 </div>
 </div>
 </div>
@@ -1286,7 +1327,7 @@ $(document).ready(function()
 <div id="LayoutGrid51">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:72;">
+<div id="wb_FontAwesomeIcon4" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:77;">
 <a href="./index.html#PageHeader"><div id="FontAwesomeIcon4"><i class="fa fa-home"></i></div></a>
 </div>
 </div>
@@ -1308,7 +1349,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
 </div>
 <input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="6/1/2026">
-<div id="DatePicker2" style="display:inline-block;width:168px;height:234px;z-index:75;">
+<div id="DatePicker2" style="display:inline-block;width:168px;height:234px;z-index:80;">
 </div>
 </div>
 <div class="col-2">
@@ -1316,11 +1357,11 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Ολοκλήρωση</u></span>
 </div>
 <input id="DatePicker6_input" name="DatePicker1" style="display:none" type="text" value="8/25/2026">
-<div id="DatePicker6" style="display:inline-block;width:168px;height:241px;z-index:77;">
+<div id="DatePicker6" style="display:inline-block;width:168px;height:241px;z-index:82;">
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image7" style="display:inline-block;width:157px;height:308px;z-index:78;">
+<div id="wb_Image7" style="display:inline-block;width:157px;height:308px;z-index:83;">
 <img src="images/c6g0t2n18w.jpg" id="Image7" alt="">
 </div>
 </div>
@@ -1395,14 +1436,14 @@ $(document).ready(function()
 <div id="LayoutGrid67">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label3" style="display:inline-block;width:71px;line-height:18px;z-index:79;">ΤΕΔΕ</label>
+<label for="" id="Label3" style="display:inline-block;width:71px;line-height:18px;z-index:84;">ΤΕΔΕ</label>
 </div>
 <div class="col-2">
-<div id="Progressbar1"  style="display:block;width:100%;height:18px;z-index:80;">
+<div id="Progressbar1"  style="display:block;width:100%;height:18px;z-index:85;">
 </div>
 </div>
 <div class="col-3">
-<label for="" id="Label8" style="display:inline-block;width:42px;line-height:18px;z-index:81;">560G</label>
+<label for="" id="Label8" style="display:inline-block;width:42px;line-height:18px;z-index:86;">560G</label>
 </div>
 </div>
 </div>
@@ -1411,14 +1452,14 @@ $(document).ready(function()
 <div id="LayoutGrid68">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label4" style="display:inline-block;width:71px;line-height:18px;z-index:82;">ΤΗΔΜ</label>
+<label for="" id="Label4" style="display:inline-block;width:71px;line-height:18px;z-index:87;">ΤΗΔΜ</label>
 </div>
 <div class="col-2">
-<div id="Progressbar2"  style="display:block;width:100%;height:18px;z-index:83;">
+<div id="Progressbar2"  style="display:block;width:100%;height:18px;z-index:88;">
 </div>
 </div>
 <div class="col-3">
-<label for="" id="Label9" style="display:inline-block;width:42px;line-height:18px;z-index:84;">300</label>
+<label for="" id="Label9" style="display:inline-block;width:42px;line-height:18px;z-index:89;">300</label>
 </div>
 </div>
 </div>
@@ -1427,14 +1468,14 @@ $(document).ready(function()
 <div id="LayoutGrid69">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label5" style="display:inline-block;width:147px;line-height:18px;z-index:85;">ΤΗΔΜ_ΗΛΕΚΤΡΟΚΙΝΗΣΗ</label>
+<label for="" id="Label5" style="display:inline-block;width:147px;line-height:18px;z-index:90;">ΤΗΔΜ_ΗΛΕΚΤΡΟΚΙΝΗΣΗ</label>
 </div>
 <div class="col-2">
-<div id="Progressbar3"  style="display:block;width:100%;height:18px;z-index:86;">
+<div id="Progressbar3"  style="display:block;width:100%;height:18px;z-index:91;">
 </div>
 </div>
 <div class="col-3">
-<label for="" id="Label10" style="display:inline-block;width:42px;line-height:18px;z-index:87;">120</label>
+<label for="" id="Label10" style="display:inline-block;width:42px;line-height:18px;z-index:92;">120</label>
 </div>
 </div>
 </div>
@@ -1443,14 +1484,14 @@ $(document).ready(function()
 <div id="LayoutGrid70">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label6" style="display:block;width:100%;line-height:18px;z-index:88;">Φορέας Ελέγχου</label>
+<label for="" id="Label6" style="display:block;width:100%;line-height:18px;z-index:93;">Φορέας Ελέγχου</label>
 </div>
 <div class="col-2">
-<div id="Progressbar4"  style="display:block;width:100%;height:18px;z-index:89;">
+<div id="Progressbar4"  style="display:block;width:100%;height:18px;z-index:94;">
 </div>
 </div>
 <div class="col-3">
-<label for="" id="Label11" style="display:inline-block;width:42px;line-height:18px;z-index:90;">420</label>
+<label for="" id="Label11" style="display:inline-block;width:42px;line-height:18px;z-index:95;">420</label>
 </div>
 </div>
 </div>
@@ -1459,14 +1500,14 @@ $(document).ready(function()
 <div id="LayoutGrid71">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label7" style="display:block;width:100%;line-height:18px;z-index:91;">ΕΧΥΠ</label>
+<label for="" id="Label7" style="display:block;width:100%;line-height:18px;z-index:96;">ΕΧΥΠ</label>
 </div>
 <div class="col-2">
-<div id="Progressbar5"  style="display:block;width:100%;height:18px;z-index:92;">
+<div id="Progressbar5"  style="display:block;width:100%;height:18px;z-index:97;">
 </div>
 </div>
 <div class="col-3">
-<label for="" id="Label12" style="display:inline-block;width:42px;line-height:18px;z-index:93;">320</label>
+<label for="" id="Label12" style="display:inline-block;width:42px;line-height:18px;z-index:98;">320</label>
 </div>
 </div>
 </div>
@@ -1475,12 +1516,12 @@ $(document).ready(function()
 <div id="LayoutGrid62">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image16" style="display:inline-block;width:531px;height:247px;z-index:94;">
+<div id="wb_Image16" style="display:inline-block;width:531px;height:247px;z-index:99;">
 <img src="images/087pjukl20.jpg" id="Image16" alt="">
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:95;">
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:100;">
 <img src="images/a62utwoun1.jpg" id="Image6" alt="">
 </div>
 </div>
@@ -1491,7 +1532,7 @@ $(document).ready(function()
 <div id="LayoutGrid73">
 <div class="row">
 <div class="col-1">
-<div id="Html8" style="display:inline-block;width:100px;height:666px;z-index:96">
+<div id="Html8" style="display:inline-block;width:100px;height:666px;z-index:101">
 </div>
 </div>
 </div>
@@ -1589,7 +1630,7 @@ $(document).ready(function()
 <div id="LayoutGrid75">
 <div class="row">
 <div class="col-1">
-<div id="Html13" style="display:inline-block;width:148px;height:64px;z-index:97">
+<div id="Html13" style="display:inline-block;width:148px;height:64px;z-index:102">
 </div>
 </div>
 </div>
@@ -1599,7 +1640,7 @@ $(document).ready(function()
 <div id="LayoutGrid76">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:98;">
+<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:103;">
 <a href="./index.html#PageHeader"><div id="FontAwesomeIcon5"><i class="fa fa-home"></i></div></a>
 </div>
 </div>
@@ -1609,7 +1650,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image4" style="display:inline-block;width:40px;height:40px;z-index:100;">
+<div id="wb_Image4" style="display:inline-block;width:40px;height:40px;z-index:105;">
 <img src="images/ERPHelpDesk.png" id="Image4" alt="">
 </div>
 </div>
@@ -1624,7 +1665,7 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη - Μελέτη</u></span>
 </div>
 <input id="DatePicker1_input" name="DatePicker4" style="display:none" type="text" value="1/8/2025">
-<div id="DatePicker1" style="display:inline-block;width:168px;height:250px;z-index:102;">
+<div id="DatePicker1" style="display:inline-block;width:168px;height:250px;z-index:107;">
 </div>
 </div>
 <div class="col-2">
@@ -1632,11 +1673,11 @@ $(document).ready(function()
 <span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>On-Line</u></span>
 </div>
 <input id="DatePicker3_input" name="DatePicker4" style="display:none" type="text" value="8/10/2025">
-<div id="DatePicker3" style="display:inline-block;width:168px;height:250px;z-index:104;">
+<div id="DatePicker3" style="display:inline-block;width:168px;height:250px;z-index:109;">
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image5" style="display:inline-block;width:716px;height:240px;z-index:105;">
+<div id="wb_Image5" style="display:inline-block;width:716px;height:240px;z-index:110;">
 <img src="images/vyea3jkc1q.jpg" id="Image5" alt="">
 </div>
 </div>
@@ -1655,18 +1696,6 @@ $(document).ready(function()
 <div id="LayoutGrid90">
 <div class="row">
 <div class="col-1">
-<div id="wb_Extension1" style="display:inline-block;width:281px;height:54px;z-index:106;">
-<script>
-<!--
-GlassButton183 = new Image();
-GlassButton183.src = "images/img0003_hover.png";
-//-->
-</script>
-<a href="r1.html" target="_blank">
-<img src="images/img0003.png" id="GlassButton183" style="border-width:0;width:281px;height:54px" alt="ΣΤΑΤΙΣΤΙΚΑ" onmouseover="this.src='images/img0003_hover.png'" onmouseout="this.src='images/img0003.png'">
-</a>
-
-</div>
 </div>
 </div>
 </div>
@@ -1675,6 +1704,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid91">
 <div class="row">
 <div class="col-1">
+<a id="Button1" href="./R1.html" target="_blank" style="display:inline-block;width:130px;height:23px;z-index:111;">Στατιστικά</a>
 </div>
 </div>
 </div>
@@ -1715,7 +1745,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid93">
 <div class="row">
 <div class="col-1">
-<div id="Html7" style="display:inline-block;width:100px;height:420px;z-index:107">
+<div id="Html7" style="display:inline-block;width:100px;height:420px;z-index:112">
 </div>
 </div>
 </div>
@@ -1725,7 +1755,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid94">
 <div class="row">
 <div class="col-1">
-<div id="Html14" style="display:inline-block;width:148px;height:64px;z-index:108">
+<div id="Html14" style="display:inline-block;width:148px;height:64px;z-index:113">
 </div>
 </div>
 </div>
@@ -1735,7 +1765,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid95">
 <div class="row">
 <div class="col-1">
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:109;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:114;">
 <a href="./index.html#PageHeader"><div id="FontAwesomeIcon6"><i class="fa fa-home"></i></div></a>
 </div>
 </div>
@@ -1745,7 +1775,7 @@ GlassButton183.src = "images/img0003_hover.png";
 </div>
 </div>
 <div class="col-3">
-<div id="wb_Image17" style="display:inline-block;width:66px;height:48px;z-index:111;">
+<div id="wb_Image17" style="display:inline-block;width:66px;height:48px;z-index:116;">
 <img src="images/ERPexam_r.png" id="Image17" alt="">
 </div>
 </div>
@@ -1759,13 +1789,13 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="wb_Text37">
 <span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>Σχήματα πιστοποίησης (8)</u></strong></span>
 </div>
-<div id="wb_Image19" style="display:inline-block;width:344px;height:160px;z-index:113;">
+<div id="wb_Image19" style="display:inline-block;width:344px;height:160px;z-index:118;">
 <img src="images/dbgbp9vf0r.jpg" id="Image19" alt="">
 </div>
 <div id="wb_Text38">
 <span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>Πραγματοποιηθήσες εξετάσεις</u></strong></span>
 </div>
-<div id="wb_Image21" style="display:inline-block;width:250px;height:344px;z-index:115;">
+<div id="wb_Image21" style="display:inline-block;width:250px;height:344px;z-index:120;">
 <img src="images/x426ev52uv.jpg" id="Image21" alt="">
 </div>
 </div>
@@ -1773,7 +1803,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="wb_Text39">
 <span style="color:#FF0000;font-family:Arial;font-size:19px;"><strong><u>224 Εξεταζόμενοι</u></strong></span>
 </div>
-<div id="wb_Image22" style="display:inline-block;width:317px;height:596px;z-index:117;">
+<div id="wb_Image22" style="display:inline-block;width:317px;height:596px;z-index:122;">
 <img src="images/gsqspu9h61.jpg" id="Image22" alt="">
 </div>
 </div>
@@ -1826,7 +1856,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
-<div id="Html5" style="display:inline-block;width:100px;height:420px;z-index:118">
+<div id="Html5" style="display:inline-block;width:100px;height:420px;z-index:123">
 </div>
 </div>
 </div>
@@ -1836,7 +1866,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
-<div id="Html1" style="display:inline-block;width:148px;height:64px;z-index:119">
+<div id="Html1" style="display:inline-block;width:148px;height:64px;z-index:124">
 </div>
 </div>
 </div>
@@ -1846,7 +1876,7 @@ GlassButton183.src = "images/img0003_hover.png";
 <div id="LayoutGrid99">
 <div class="row">
 <div class="col-1">
-<ul id="SlideShow2" style="overflow:hidden;z-index:120;">
+<ul id="SlideShow2" style="overflow:hidden;z-index:125;">
 <li><img class="image" src="images/images (1).jpg" alt="" title=""></li>
 <li><img class="image" src="images/e3dd657d6a8ed6b5c10c920358352b90_XL.jpg" style="display:none;" alt="" title=""></li>
 <li><img class="image" src="images/images (2).jpg" style="display:none;" alt="" title=""></li>
@@ -1856,7 +1886,7 @@ GlassButton183.src = "images/img0003_hover.png";
 </div>
 </div>
 </div>
-<div id="NewsFeedTicker1" style="overflow:hidden;position:absolute;left:1261px;top:12685px;width:82px;height:82px;z-index:226;">
+<div id="NewsFeedTicker1" style="overflow:hidden;position:absolute;left:1261px;top:12685px;width:82px;height:82px;z-index:231;">
 </div>
 </body>
 </html>
