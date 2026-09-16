@@ -628,7 +628,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: transparent;
+   background-color: #DCDCDC;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -772,8 +772,8 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #F5F5F5;
-   background-image: none;
+   background-color: #FFFFFF;
+   background: linear-gradient(to top, #FFFFFF 0%, #DCDCDC 100%);
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -4556,20 +4556,6 @@ body
    height: 82px;
    vertical-align: top;
 }
-#wb_Image13
-{
-   opacity: 1.0;
-   -webkit-transition: opacity 500ms linear 0ms;
-   -moz-transition: opacity 500ms linear 0ms;
-   transition: opacity 500ms linear 0ms;
-}
-#wb_Image13:hover
-{
-   background-color: #FFD700;
-   -webkit-transition: background-color 500ms linear 0ms;
-   -moz-transition: background-color 500ms linear 0ms;
-   transition: background-color 500ms linear 0ms;
-}
 #wb_Text27 
 {
    background-color: transparent;
@@ -4598,20 +4584,6 @@ body
    height: 82px;
    vertical-align: top;
 }
-#wb_Image14
-{
-   opacity: 1.0;
-   -webkit-transition: opacity 500ms linear 0ms;
-   -moz-transition: opacity 500ms linear 0ms;
-   transition: opacity 500ms linear 0ms;
-}
-#wb_Image14:hover
-{
-   background-color: #FFD700;
-   -webkit-transition: background-color 500ms linear 0ms;
-   -moz-transition: background-color 500ms linear 0ms;
-   transition: background-color 500ms linear 0ms;
-}
 #wb_Text29 
 {
    background-color: transparent;
@@ -4639,20 +4611,6 @@ body
    width: 82px;
    height: 82px;
    vertical-align: top;
-}
-#wb_Image15
-{
-   opacity: 1.0;
-   -webkit-transition: opacity 500ms linear 0ms;
-   -moz-transition: opacity 500ms linear 0ms;
-   transition: opacity 500ms linear 0ms;
-}
-#wb_Image15:hover
-{
-   background-color: #FFD700;
-   -webkit-transition: background-color 500ms linear 0ms;
-   -moz-transition: background-color 500ms linear 0ms;
-   transition: background-color 500ms linear 0ms;
 }
 #wb_Text31 
 {
