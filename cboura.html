@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<title>Administrator</title>
+<meta name="author" content="Nikolaou Nontas">
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="tools2.ico" rel="shortcut icon" type="image/x-icon">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="cboura.css" rel="stylesheet">
+<link href="cboura.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeInSine');
+   });
+   $("#DatePicker1").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker1").datepicker("setDate", "9/18/2026");
+   $("#DatePicker1").change(function()
+   {
+      $('#DatePicker1_input').attr('value',$(this).val());
+   });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_navigation">
+<div id="navigation">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<input id="DatePicker1_input" name="DatePicker1" style="display:none" type="text" value="9/18/2026">
+<div id="DatePicker1" style="display:inline-block;width:170px;height:185px;z-index:0;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Εξετάσεις πιστοποίησης προσώπων σε δύο σχήματα (φορτιστές &amp; ΥΔΕ)</strong></span>
+</div>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Αδυναμία σύνδεσης στο δίκτυο. Συνεχείς αποσυνδέσεις. </strong></span>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Αδυναμία επικοινωνίας με το ΙΤ. Δεν υπάρχει κεντρική πληροφόρηση σε Τηλεργασίες και άδειες?</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>
