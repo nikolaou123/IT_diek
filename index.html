@@ -28,6 +28,7 @@ $(document).ready(function()
    $('#wb_Image23').addClass('visibility-hidden');
    $('#wb_Image27').addClass('visibility-hidden');
    $('#wb_Image1').addClass('visibility-hidden');
+   $('#wb_Image20').addClass('visibility-hidden');
    function skrollrInit()
    {
       skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
@@ -368,15 +369,10 @@ $(document).ready(function()
    {
       onScrollImage27();
    });
-   $("#PanelMenu2").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
+   $("#PanelMenu2").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true, overlay: true});
    $("#PanelMenu2_markup ul li a").click(function(event)
    {
        $.panel.hide($("#PanelMenu2_panel"));
-   });
-   $("#PanelMenu3").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true, overlay: true});
-   $("#PanelMenu3_markup ul li a").click(function(event)
-   {
-       $.panel.hide($("#PanelMenu3_panel"));
    });
    function onScrollImage1()
    {
@@ -403,6 +399,30 @@ $(document).ready(function()
       onScrollImage1();
    });
    $("#SlideShow1").conveyerbelt({speed:1, spacing: 150});
+   function onScrollImage20()
+   {
+      var $obj = $("#wb_Image20");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image20', 'animate-fade-in', 500, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image20', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image20').inViewPort(true))
+   {
+      $('#wb_Image20').addClass("in-viewport");
+   }
+   onScrollImage20();
+   $(window).scroll(function(event)
+   {
+      onScrollImage20();
+   });
 });
 </script>
 </head>
@@ -572,19 +592,12 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_PanelMenu3" style="display:inline-block;width:182px;height:38px;z-index:6;">
-<a href="#PanelMenu3_markup" id="PanelMenu3">&nbsp;&nbsp; &#913;&#957;&#959;&#953;&#967;&#964;&#940; projects</a>
-<div id="PanelMenu3_markup">
-<ul role="menu">
-   <li role="menuitem"><a href="">&#934;&#959;&#961;&#941;&#945;&#962; &#917;&#955;&#941;&#947;&#967;&#959;&#965;</a></li>
-   <li role="menuitem"><a href="">&#928;&#953;&#963;&#964;&#959;&#960;&#959;&#943;&#951;&#963;&#951; &#928;&#961;&#959;&#963;&#974;&#960;&#969;&#957;</a></li>
-</ul>
-</div>
-
+<div id="wb_Image20" style="display:inline-block;width:89px;height:89px;opacity:0.50;z-index:6;">
+<a href="#PageHeader"><img src="images/icons8-project-100.png" id="Image20" alt=""></a>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image23" style="display:inline-block;width:119px;height:90px;opacity:0.50;z-index:7;">
+<div id="wb_Image23" style="display:inline-block;width:120px;height:91px;opacity:0.50;z-index:7;">
 <a href="#PageHeader"><img src="images/ihub3.png" id="Image23" alt=""></a>
 </div>
 </div>
@@ -646,15 +659,31 @@ $(document).ready(function()
 <div id="LayoutGrid11">
 <div class="row">
 <div class="col-1">
+<div id="wb_PanelMenu2" style="display:inline-block;width:135px;height:32px;z-index:16;">
+<a href="#PanelMenu2_markup" id="PanelMenu2">&nbsp;&nbsp; Projects</a>
+<div id="PanelMenu2_markup">
+<ul role="menu">
+   <li role="menuitem"><a href=""><i class="fa fa-bell-o fa-fw"></i><span>ANOIXTA-----------------------------</span></a></li>
+   <li role="menuitem"><a href="">&#917;&#931;&#933;&#916; &#916;&#953;&#945;&#967;&#949;&#943;&#961;&#953;&#963;&#951; &#920;&#941;&#963;&#949;&#969;&#957; &#949;&#961;&#947;&#945;&#963;&#943;&#945;&#962;</a></li>
+   <li role="menuitem"><a href="">&#917;&#960;&#953;&#952;&#949;&#969;&#961;&#942;&#963;&#949;&#953;&#962; &#923;&#953;&#960;&#945;&#957;&#964;&#953;&#954;&#974;&#957;</a></li>
+   <li role="menuitem"><a href="#PageHeader"><i class="fa fa-bell-slash fa-fw"></i><span>&#922;&#923;&#917;&#921;&#931;&#932;&#913;-------------------------------</span></a></li>
+   <li role="menuitem"><a href="#LayoutGrid12">Lift &amp; Shift iHubERP</a></li>
+   <li role="menuitem"><a href="#LayoutGrid41">Lift &amp; Shift QUIS</a></li>
+   <li role="menuitem"><a href="#LayoutGrid50">List &amp; Shift File Server</a></li>
+   <li role="menuitem"><a href="#LayoutGrid75">iHub Ticketing</a></li>
+</ul>
+</div>
+
+</div>
 </div>
 <div class="col-2">
-<input type="submit" id="Button2" name="" value="Read More" style="display:inline-block;width:85px;height:25px;z-index:16;">
+<input type="submit" id="Button2" name="" value="Read More" style="display:inline-block;width:100px;height:38px;z-index:17;">
 </div>
 <div class="col-3">
-<input type="submit" id="Button3" name="" value="Read More" style="display:inline-block;width:85px;height:25px;z-index:17;">
+<input type="submit" id="Button3" name="" value="Read More" style="display:inline-block;width:100px;height:38px;z-index:18;">
 </div>
 <div class="col-4">
-<a id="Button4" href="#LayoutGrid75" style="display:inline-block;width:83px;height:23px;z-index:18;">Read More</a>
+<a id="Button4" href="#LayoutGrid75" style="display:inline-block;width:98px;height:36px;z-index:19;">Read More</a>
 </div>
 </div>
 </div>
@@ -663,19 +692,6 @@ $(document).ready(function()
 <div id="LayoutGrid100">
 <div class="row">
 <div class="col-1">
-<div id="wb_PanelMenu2" style="display:inline-block;width:182px;height:38px;z-index:19;">
-<a href="#PanelMenu2_markup" id="PanelMenu2">&nbsp;&nbsp;&nbsp; &#922;&#955;&#949;&#953;&#963;&#964;&#940; projects</a>
-<div id="PanelMenu2_markup">
-<ul role="menu">
-   <li role="menuitem"><a href="#LayoutGrid12"><i class="fa fa-file-powerpoint-o fa-fw"></i><span>Lift &amp; Shift iHubERP</span></a></li>
-   <li role="menuitem"><a href="#LayoutGrid41"><i class="fa fa-birthday-cake fa-fw"></i><span>Lift &amp; Shift QUIS</span></a></li>
-   <li role="menuitem"><a href="#LayoutGrid50"><i class="fa fa-folder-open fa-fw"></i><span>List &amp; Shift File Server</span></a></li>
-   <li role="menuitem"><a href="#PageHeader">------------------</a></li>
-   <li role="menuitem"><a href="#LayoutGrid75"><i class="fa fa-sticky-note fa-fw"></i><span>iHub Ticketing</span></a></li>
-</ul>
-</div>
-
-</div>
 </div>
 <div class="col-2">
 </div>

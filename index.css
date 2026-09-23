@@ -869,7 +869,7 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 25%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid1 > .row > .col-2
 {
@@ -1164,7 +1164,7 @@ body
    background-image: none;
    border: 0px solid #FFFFFF;
    width: 25%;
-   text-align: left;
+   text-align: center;
 }
 #LayoutGrid11 > .row > .col-2
 {
@@ -9842,8 +9842,8 @@ body
    border-radius: 10px;
    padding: 10px 10px 10px 10px;
    display: inline-block;
-   width: 95px;
-   height: 66px;
+   width: 96px;
+   height: 67px;
    vertical-align: top;
 }
 #wb_Image23
@@ -10018,8 +10018,8 @@ body
 {
    color: #FFFFFF;
    border: 0px solid #2E2E2E;
-   background-color: #000000;
-   background: linear-gradient(to top, #000000 0%, #DCDCDC 100%);
+   background-color: #6495ED;
+   background: linear-gradient(to top, #6495ED 0%, #191970 100%);
    font-family: "Trebuchet MS";
    font-weight: normal;
    font-size: 15px;
@@ -10028,10 +10028,10 @@ body
 }
 #wb_PanelMenu2 a
 {
-   color: #808080;
+   color: #FFFFFF;
    border: 3px solid #D3D3D3;
    border-radius: 6px;
-   background-color: #F5F5F5;
+   background-color: #4169E1;
    font-family: "Trebuchet MS";
    font-weight: normal;
    font-size: 15px;
@@ -10041,19 +10041,19 @@ body
 #PanelMenu2_markup li a:hover
 {
    color: #FFFFFF;
-   background-color: #708090;
-   background: linear-gradient(to top, #708090 0%, #FF4500 100%);
+   background-color: #FF8C00;
+   background: linear-gradient(to top, #FF8C00 0%, #FF4500 100%);
    border: 0px solid #2E2E2E;
 }
 #wb_PanelMenu2 a:hover
 {
-   color: #000000;
-   background-color: #0AABE1;
+   color: #FFFFFF;
+   background-color: #FF8C00;
    border: 3px solid #D3D3D3;
 }
 #PanelMenu2_panel
 {
-   background-color: #000000;
+   background-color: #6495ED;
    overflow-y: auto;
 }
 #PanelMenu2
@@ -10076,9 +10076,9 @@ body
 }
 #PanelMenu2
 {
-   line-height: 38px;
-   width: 140px;
-   height: 38px;
+   line-height: 32px;
+   width: 93px;
+   height: 32px;
    position: absolute;
    z-index: 999;
 }
@@ -10111,131 +10111,6 @@ body
    height: 100%;
    vertical-align: top;
    object-fit: contain;
-}
-#wb_PanelMenu3 a, #PanelMenu3_markup li a
-{
-   display: block;
-   text-align: left;
-   vertical-align: middle;
-}
-#PanelMenu3_markup
-{
-   display: none;
-   margin: 0;
-   padding: 0;
-}
-#PanelMenu3_panel #PanelMenu3_markup
-{
-   display: block;
-}
-#PanelMenu3_markup ul
-{
-   list-style: none;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-#PanelMenu3_markup li a, #PanelMenu3_markup li a:hover
-{
-   padding: 20px 5px 20px 10px;
-   box-shadow: none;
-}
-#PanelMenu3_markup .divider
-{
-   height: 1px;
-   margin: 9px 0;
-   overflow: hidden;
-   background-color: #2E2E2E;
-}
-#PanelMenu3_panel
-{
-   display: none;
-   position: absolute;
-   position: fixed;
-   top: 0;
-   height: 100%;
-   width: 300px;
-   z-index: 9999;
-}
-#PanelMenu3_overlay
-{
-   display: none;
-   position: fixed;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   background-color: #000000;
-   opacity: 0.2;
-   z-index: 9998;
-}
-#PanelMenu3_markup li a
-{
-   color: #FFFFFF;
-   border: 0px solid #2E2E2E;
-   background-color: #000000;
-   background: linear-gradient(to top, #000000 0%, #00BFFF 100%);
-   font-family: "Trebuchet MS";
-   font-weight: normal;
-   font-size: 15px;
-   font-style: normal;
-   text-decoration: none;
-}
-#wb_PanelMenu3 a
-{
-   color: #FFFFFF;
-   border: 3px solid #D3D3D3;
-   border-radius: 6px;
-   background-color: #0275D8;
-   font-family: "Trebuchet MS";
-   font-weight: normal;
-   font-size: 15px;
-   font-style: normal;
-   text-decoration: none;
-}
-#PanelMenu3_markup li a:hover
-{
-   color: #FFFFFF;
-   background-color: #708090;
-   background: linear-gradient(to top, #708090 0%, #FF4500 100%);
-   border: 0px solid #2E2E2E;
-}
-#wb_PanelMenu3 a:hover
-{
-   color: #000000;
-   background-color: #0AABE1;
-   border: 3px solid #D3D3D3;
-}
-#PanelMenu3_panel
-{
-   background-color: #000000;
-   overflow-y: auto;
-}
-#PanelMenu3
-{
-   padding-right: 42px;
-}
-#PanelMenu3:after
-{
-   position: absolute;
-   top: 50%;
-   right: 16px;
-   width: 26px;
-   height: 26px;
-   margin-top: -13px;
-   content: "\f0c9";
-   display: inline-block;
-   font-family: FontAwesome;
-   font-size: 26px;
-   line-height: 26px;
-}
-#PanelMenu3
-{
-   line-height: 38px;
-   width: 140px;
-   height: 38px;
-   position: absolute;
-   z-index: 999;
 }
 #wb_Image1
 {
@@ -10351,7 +10226,7 @@ body
 {
    border: 1px solid #2E6DA4;
    border-radius: 4px;
-   background-color: #0275D8;
+   background-color: #808080;
    background-image: none;
    color: #FFFFFF;
    font-family: "Trebuchet MS";
@@ -10364,7 +10239,7 @@ body
 {
    border: 1px solid #2E6DA4;
    border-radius: 4px;
-   background-color: #0275D8;
+   background-color: #808080;
    background-image: none;
    color: #FFFFFF;
    font-family: "Trebuchet MS";
@@ -10375,7 +10250,7 @@ body
 }
 #Button4
 {
-   line-height: 23px;
+   line-height: 36px;
    text-align: center;
    text-decoration: none;
    vertical-align: top;
@@ -10580,4 +10455,19 @@ body
 #wb_Text47 div
 {
    text-align: center;
+}
+#wb_Image20
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image20
+{
+   border: 2px solid #DCDCDC;
+   border-radius: 10px;
+   padding: 10px 10px 10px 10px;
+   display: inline-block;
+   width: 65px;
+   height: 65px;
+   vertical-align: top;
 }
