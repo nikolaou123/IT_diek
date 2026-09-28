@@ -461,11 +461,24 @@ $(document).ready(function()
       $(this).find('.submenu').hide();
    })
    $('#MegaMenu1 li .submenu').hide();
+   $("#DatePicker8").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker8").datepicker("setDate", "9/15/2026");
+   $("#DatePicker8").change(function()
+   {
+      $('#DatePicker8_input').attr('value',$(this).val());
+   });
 });
 </script>
 </head>
 <body>
-<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:233;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:0px;width:100%;height:55px;z-index:247;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 </div>
 <div id="wb_LayoutGrid102">
 <div id="LayoutGrid102">
@@ -520,7 +533,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:left;left:0;top:0;right:0;height:55px;z-index:233;" data-top="background:rgba(233, 233,233, 0.0);" data--50-top="background:rgba(233, 233, 233, 1.0);">
+<div id="PageHeader1" style="position:fixed;overflow:hidden;text-align:left;left:0;top:0;right:0;height:55px;z-index:247;" data-top="background:rgba(233, 233,233, 0.0);" data--50-top="background:rgba(233, 233, 233, 1.0);">
    <div id="wb_PanelMenu1" style="position:absolute;left:1%;top:23%;width:12%;height:47%;z-index:2;">
       <a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp; Smart Links</a>
       <div id="PanelMenu1_markup">
@@ -649,7 +662,7 @@ $(document).ready(function()
          </ul>
          <ul>
             <li><h2>Σε Ερευνα (test)</h2></li>
-            <li><a role="menuitem" href=""><i class="fa fa-caret-right bullet"></i>iHub Ticketing (για κινητά)</a></li>
+            <li><a role="menuitem" href="#LayoutGrid116"><i class="fa fa-caret-right bullet"></i>iHub Ticketing (για κινητά)</a></li>
          </ul>
       </div>
       </li>
@@ -732,7 +745,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:252px;z-index:133;" title="Social Media Sticky">
+<div id="socialmedia_sticky" style="position:fixed;text-align:left;left:auto;right:-130px;top:125px;width:175px;height:252px;z-index:138;" title="Social Media Sticky">
 <a href="./password.html" target="_blank" title="&#917;&#960;&#953;&#954;&#959;&#953;&#957;&#969;&#957;&#943;&#945; &#956;&#949; &#924;&#960;&#959;&#973;&#961;&#945;"><img src="images/img0001.png" id="socialmedia_rss" alt="" title="" style="border-width:0;position:absolute;left:0px;top:150px;width:150px;height:45px;z-index:13"></a>
 <a href="mailto:ep.nikolaou@ppcgroup.com"><img src="images/img0002.png" id="socialmedia_email" alt="" title="" style="border-width:0;position:absolute;left:0px;top:195px;width:150px;height:45px;z-index:14"></a>
 </div>
@@ -1939,6 +1952,115 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid108">
+<div id="LayoutGrid108">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid109">
+<div id="LayoutGrid109">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid110">
+<div id="LayoutGrid110">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid111">
+<div id="LayoutGrid111">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid112">
+<div id="LayoutGrid112">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid113">
+<div id="LayoutGrid113">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid114">
+<div id="LayoutGrid114">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid116">
+<div id="LayoutGrid116">
+<div class="row">
+<div class="col-1">
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:27px;height:27px;text-align:center;z-index:119;">
+<a href="./index.html#PageHeader"><div id="FontAwesomeIcon7"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text40">
+<span style="color:#000000;font-family:Arial;font-size:35px;"><strong>Ihub Ticketing (for Mobile)</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image20" style="display:inline-block;width:40px;height:40px;z-index:121;">
+<img src="images/ERPHelpDesk.png" id="Image20" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid115">
+<div id="LayoutGrid115">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text3">
+<span style="color:#191970;font-family:'Comic Sans MS';font-size:15px;"><u>Εναρξη</u></span>
+</div>
+<input id="DatePicker8_input" name="DatePicker4" style="display:none" type="text" value="9/15/2026">
+<div id="DatePicker8" style="display:inline-block;width:217px;height:250px;z-index:123;">
+</div>
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
 </div>
 </div>
 </div>
