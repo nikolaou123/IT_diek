@@ -33,6 +33,19 @@ $(document).ready(function()
    {
       $('#DatePicker1_input').attr('value',$(this).val());
    });
+   $("#DatePicker2").datepicker(
+   {
+      dateFormat: 'mm/dd/yy',
+      changeMonth: false,
+      changeYear: false,
+      showButtonPanel: false,
+      showAnim: 'show'
+   });
+   $("#DatePicker2").datepicker("setDate", "9/28/2026");
+   $("#DatePicker2").change(function()
+   {
+      $('#DatePicker2_input').attr('value',$(this).val());
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -68,7 +81,7 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker1_input" name="DatePicker1" style="display:none" type="text" value="9/18/2026">
-<div id="DatePicker1" style="display:inline-block;width:170px;height:185px;z-index:1;">
+<div id="DatePicker1" style="display:inline-block;width:168px;height:185px;z-index:1;">
 </div>
 </div>
 <div class="col-2">
@@ -80,6 +93,25 @@ $(window).on('load', function()
 </div>
 <div id="wb_Text3">
 <span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Αδυναμία επικοινωνίας με το ΙΤ. Δεν υπάρχει κεντρική πληροφόρηση σε Τηλεργασίες και άδειες?</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="9/28/2026">
+<div id="DatePicker2" style="display:inline-block;width:168px;height:185px;z-index:5;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Εκτέλεση εκκένωσης κτηρίων (ΑΣΚΗΣΗ 28.09.2026)</strong></span>
+</div>
+<div id="wb_Text5">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</strong></span>
 </div>
 </div>
 </div>
