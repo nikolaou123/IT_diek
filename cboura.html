@@ -11,15 +11,44 @@
 <link href="cboura.css" rel="stylesheet">
 <link href="cboura.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<link href="sm-core-css.css" rel="stylesheet">
+<script src="jquery.smartmenus.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $("a[href*='#header']").click(function(event)
+var timerPageHeader = null;
+function PageHeaderHide()
+{
+   var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+   if (isTouch)
+      return;
+   timerPageHeader = setTimeout(function()
    {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeInSine');
-   });
+      $('#PageHeader').hide();
+      $('#PageHeader_sensitive').show();
+   }, 2000);
+}
+PageHeaderHide();
+$('#PageHeader_sensitive').on("mouseenter", function()
+{
+   clearTimeout(timerPageHeader);
+   if ($('#PageHeader_sensitive').is(":visible"))
+   {
+      $('#PageHeader_sensitive').hide();
+      $('#PageHeader').show();
+   }
+});
+$('#PageHeader').on("mouseleave",function()
+{
+   PageHeaderHide();
+});
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
    $("#DatePicker1").datepicker(
    {
       dateFormat: 'mm/dd/yy',
@@ -46,6 +75,19 @@ $(document).ready(function()
    {
       $('#DatePicker2_input').attr('value',$(this).val());
    });
+   $('#Extension1').smartmenus({
+      bottomToTopSubMenus: false,
+      collapsibleBehavior: 'default',
+      hideOnClick: true,
+      keepHighlighted: true,
+      keepInViewport: true,
+      mainMenuSubOffsetX: 0,
+      mainMenuSubOffsetY: 0,
+      rightToLeftSubMenus: false,
+      showOnClick: false,
+      subMenusSubOffsetX: 0,
+      subMenusSubOffsetY: 0
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -55,23 +97,58 @@ $(window).on('load', function()
 </script>
 </head>
 <body>
-<div id="wb_header">
-<div id="header">
-<div class="row">
-<div class="col-1">
-<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:0;">
-<h2 id="Heading2">Εσωτερική επικοινωνία με Χριστίνα Μπούρα</h2>
+<div id="PageHeader_sensitive" style="position:fixed;display:none;left:0;top:0;right:0;height:50px;z-index:9999"></div>
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:13;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader_Container" style="width:1203px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_CssMenu2" style="position:absolute;left:900px;top:5px;width:303px;height:41px;z-index:0;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#PageHeader" target="_self">&#917;&#963;&#969;&#964;&#949;&#961;&#953;&#954;&#942;&nbsp;&#917;&#960;&#953;&#954;&#959;&#953;&#957;&#969;&#957;&#943;&#945;&nbsp;&#956;&#949;&nbsp;&#935;&#953;&#963;&#964;&#943;&#957;&#945;&nbsp;&#924;&#960;&#959;&#973;&#961;&#945;</a>
+</li>
+</ul>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="wb_navigation">
-<div id="navigation">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
 </div>
 <div class="col-2">
+<div id="wb_Extension1" style="display:inline-block;width:324px;height:100px;z-index:1;">
+   <ul id="Extension1" class="sm sm-clean">
+      <li>
+         <a href="#">&#920;&#941;&#956;&#945;&#964;&#945; &#960;&#961;&#959;&#962; &#963;&#965;&#950;&#942;&#964;&#951;&#963;&#951;</a>
+         <ul>
+            <li><a href="">Ξαφνική (29/9/2026) αύξηση usage mem SQLSERVER (VM)</a></li>
+            <li><a href="">BACKUP (FrlSrv (AZURE)</a></li>
+            <li><a href="">Παρουσιολόγια - HR</a></li>
+            <li><a href="">Off Line Εφαρμογές ERP</a></li>
+            <li><a href="">---</a></li>
+            <li><a href="">  </a></li>
+         </ul>
+      </li>
+      </ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="9/28/2026">
+<div id="DatePicker2" style="display:inline-block;width:168px;height:185px;z-index:2;">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Εκτέλεση εκκένωσης κτηρίων (ΑΣΚΗΣΗ 28.09.2026)</strong></span>
+</div>
+<div id="wb_Text5">
+<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</strong></span>
+</div>
 </div>
 </div>
 </div>
@@ -81,7 +158,7 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker1_input" name="DatePicker1" style="display:none" type="text" value="9/18/2026">
-<div id="DatePicker1" style="display:inline-block;width:168px;height:185px;z-index:1;">
+<div id="DatePicker1" style="display:inline-block;width:168px;height:185px;z-index:5;">
 </div>
 </div>
 <div class="col-2">
@@ -93,25 +170,6 @@ $(window).on('load', function()
 </div>
 <div id="wb_Text3">
 <span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Αδυναμία επικοινωνίας με το ΙΤ. Δεν υπάρχει κεντρική πληροφόρηση σε Τηλεργασίες και άδειες?</strong></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
-<div class="row">
-<div class="col-1">
-<input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="9/28/2026">
-<div id="DatePicker2" style="display:inline-block;width:168px;height:185px;z-index:5;">
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text4">
-<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Εκτέλεση εκκένωσης κτηρίων (ΑΣΚΗΣΗ 28.09.2026)</strong></span>
-</div>
-<div id="wb_Text5">
-<span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</strong></span>
 </div>
 </div>
 </div>
