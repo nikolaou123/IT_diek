@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="tools2.ico" rel="shortcut icon" type="image/x-icon">
 <link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
 <link href="cboura.css" rel="stylesheet">
 <link href="cboura.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
@@ -15,9 +16,12 @@
 <script src="jquery-ui.min.js"></script>
 <link href="sm-core-css.css" rel="stylesheet">
 <script src="jquery.smartmenus.min.js"></script>
+<script src="wwb15.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   $('#wb_FontAwesomeIcon28').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon1').addClass('visibility-hidden');
 var timerPageHeader = null;
 function PageHeaderHide()
 {
@@ -88,6 +92,34 @@ $('#PageHeader').on("mouseleave",function()
       subMenusSubOffsetX: 0,
       subMenusSubOffsetY: 0
    });
+   function onScrollFontAwesomeIcon28()
+   {
+      var $obj = $("#wb_FontAwesomeIcon28");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon28', 'transform-lightspeed-in', 700, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon28();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon28();
+   });
+   function onScrollFontAwesomeIcon1()
+   {
+      var $obj = $("#wb_FontAwesomeIcon1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon1', 'transform-lightspeed-in', 700, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon1();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon1();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -98,7 +130,7 @@ $(window).on('load', function()
 </head>
 <body>
 <div id="PageHeader_sensitive" style="position:fixed;display:none;left:0;top:0;right:0;height:50px;z-index:9999"></div>
-<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:13;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:50px;z-index:15;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 <div id="PageHeader_Container" style="width:1203px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_CssMenu2" style="position:absolute;left:900px;top:5px;width:303px;height:41px;z-index:0;">
 <ul role="menubar">
@@ -114,20 +146,18 @@ $(window).on('load', function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<div id="wb_Extension1" style="display:inline-block;width:324px;height:100px;z-index:1;">
+<div id="wb_Extension1" style="display:inline-block;width:225px;height:100px;z-index:1;">
    <ul id="Extension1" class="sm sm-clean">
       <li>
          <a href="#">&#920;&#941;&#956;&#945;&#964;&#945; &#960;&#961;&#959;&#962; &#963;&#965;&#950;&#942;&#964;&#951;&#963;&#951;</a>
          <ul>
+            <li><a href="./application modernization.pdf" target="_blank">Application Modernization</a></li>
+            <li><a href="">---</a></li>
             <li><a href="">BACKUP (FrlSrv (AZURE)</a></li>
             <li><a href="">Παρουσιολόγια - HR</a></li>
             <li><a href="">Off Line Εφαρμογές ERP</a></li>
-            <li><a href="">---</a></li>
             <li><a href="">  </a></li>
          </ul>
-      </li>
-      <li>
-         <a href="#">Button</a>
       </li>
       </ul>
 
@@ -151,6 +181,12 @@ $(window).on('load', function()
 <div id="wb_Text5">
 <span style="color:#000000;font-family:Arial;font-size:16px;"><strong>Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</strong></span>
 </div>
+<div id="wb_FontAwesomeIcon28" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:5;">
+<a href="./RE_ Παρόντες στις εγκαταστάσεις ΔΚΚ (28_09_2026 15_39_07).msg" target="_blank"><div id="FontAwesomeIcon28"><i class="fa fa-exclamation-triangle"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:40px;height:40px;text-align:center;z-index:6;">
+<a href="./ΑΣΚΗΣΗ 28_09_2026.msg" target="_blank"><div id="FontAwesomeIcon1"><i class="fa fa-exclamation-triangle"></i></div></a>
+</div>
 </div>
 </div>
 </div>
@@ -160,7 +196,7 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker1_input" name="DatePicker1" style="display:none" type="text" value="9/18/2026">
-<div id="DatePicker1" style="display:inline-block;width:168px;height:185px;z-index:5;">
+<div id="DatePicker1" style="display:inline-block;width:168px;height:185px;z-index:7;">
 </div>
 </div>
 <div class="col-2">

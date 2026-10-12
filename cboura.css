@@ -730,3 +730,77 @@ body
    background: #3092C0;
 }
 }
+#wb_FontAwesomeIcon28
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0px 10px 0px 0px;
+   padding: 12px 12px 12px 12px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_FontAwesomeIcon28:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #FFFFFF;
+}
+#FontAwesomeIcon28
+{
+   height: 40px;
+   width: 40px;
+}
+#FontAwesomeIcon28 i
+{
+   color: #0AABE1;
+   display: inline-block;
+   font-size: 40px;
+   line-height: 40px;
+   vertical-align: middle;
+   width: 39px;
+}
+#wb_FontAwesomeIcon28:hover i
+{
+   color: #0AABE1;
+}
+#wb_FontAwesomeIcon1
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0px 10px 0px 0px;
+   padding: 12px 12px 12px 12px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_FontAwesomeIcon1:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #FFFFFF;
+}
+#FontAwesomeIcon1
+{
+   height: 40px;
+   width: 40px;
+}
+#FontAwesomeIcon1 i
+{
+   color: #0AABE1;
+   display: inline-block;
+   font-size: 40px;
+   line-height: 40px;
+   vertical-align: middle;
+   width: 39px;
+}
+#wb_FontAwesomeIcon1:hover i
+{
+   color: #0AABE1;
+}
