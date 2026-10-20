@@ -903,12 +903,25 @@ body
 #Card4-card-item2
 {
    box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
    margin: 20px 20px 0px 20px;
    border-top: 1px #D8D8D8 solid;
    border-width: 1px 0 0 0;
    height: 0;
    line-height: 0;
+}
+#Card4-card-footer
+{
+   box-sizing: border-box;
+   border-top: 1px solid #DEDEDE;
+   border-radius: 0 0 3px 3px;
+   margin: 0;
+   padding: 12px 20px 12px 20px;
+   background-color: #F7F7F9;
+   background-image: none;
+   color: #B22222;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
 }
 #wb_Image5
 {
