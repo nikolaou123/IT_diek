@@ -98,6 +98,158 @@ body
    width: 100% !important;
 }
 }
+#wb_LayoutGrid7
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #A9A9A9;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid7
+{
+   box-sizing: border-box;
+   padding: 20px 15px 20px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid7 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid7 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: center;
+}
+#LayoutGrid7 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 83.33333333%;
+   text-align: center;
+}
+#LayoutGrid7:before,
+#LayoutGrid7:after,
+#LayoutGrid7 .row:before,
+#LayoutGrid7 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid7:after,
+#LayoutGrid7 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_LayoutGrid6
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #A9A9A9;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid6
+{
+   box-sizing: border-box;
+   padding: 20px 15px 20px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid6 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid6 > .row > .col-1, #LayoutGrid6 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid6 > .row > .col-1, #LayoutGrid6 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid6 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: center;
+}
+#LayoutGrid6 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 83.33333333%;
+   text-align: center;
+}
+#LayoutGrid6:before,
+#LayoutGrid6:after,
+#LayoutGrid6 .row:before,
+#LayoutGrid6 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid6:after,
+#LayoutGrid6 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid6 > .row > .col-1, #LayoutGrid6 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -878,4 +1030,142 @@ body
 #wb_FontAwesomeIcon2:hover i
 {
    color: #0AABE1;
+}
+#DatePicker5 .ui-datepicker
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   z-index: 1003 !important;
+   display: none;
+   width: 100%;
+}
+#DatePicker5 .ui-datepicker td a
+{
+   text-align: center;
+   padding: 2px 2px 2px 2px;
+}
+.ui-datepicker, .ui-datepicker .ui-corner-all
+{
+   border-radius: 0px;
+}
+#DatePicker5
+{
+   margin: 0;
+}
+#wb_Image6
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image6
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 81px;
+   height: 81px;
+   vertical-align: top;
+}
+#wb_Card5
+{
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 3px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Card5-card-body
+{
+   -webkit-flex: 1 1 auto;
+   flex: 1 1 auto;
+   font-size: 0px;
+}
+#Card5-card-item0
+{
+   box-sizing: border-box;
+   border-radius: 3px 3px 0 0;
+   margin: 20px 20px 0px 20px;
+   padding: 0;
+   color: #292B2C;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#DatePicker6 .ui-datepicker
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   z-index: 1003 !important;
+   display: none;
+   width: 100%;
+}
+#DatePicker6 .ui-datepicker td a
+{
+   text-align: center;
+   padding: 2px 2px 2px 2px;
+}
+.ui-datepicker, .ui-datepicker .ui-corner-all
+{
+   border-radius: 0px;
+}
+#DatePicker6
+{
+   margin: 0;
+}
+#wb_Image7
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image7
+{
+   border: 0px solid #000000;
+   padding: 0;
+   display: inline-block;
+   width: 81px;
+   height: 81px;
+   vertical-align: top;
+}
+#wb_Card6
+{
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid #DEDEDE;
+   border-radius: 3px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Card6-card-body
+{
+   -webkit-flex: 1 1 auto;
+   flex: 1 1 auto;
+   font-size: 0px;
+}
+#Card6-card-item0
+{
+   box-sizing: border-box;
+   border-radius: 3px 3px 0 0;
+   margin: 20px 20px 0px 20px;
+   padding: 0;
+   color: #A52A2A;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
 }
