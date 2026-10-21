@@ -108,7 +108,7 @@ body
    width: 100%;
    background-color: #FFFFFF;
    background-image: none;
-   border: 0px solid #A9A9A9;
+   border: 2px solid #A9A9A9;
    box-sizing: border-box;
    margin: 0;
 }
@@ -174,82 +174,6 @@ body
    width: 100% !important;
 }
 }
-#wb_LayoutGrid3
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: #ADD8E6;
-   background-image: none;
-   border: 0px solid #C0C0C0;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid3
-{
-   box-sizing: border-box;
-   padding: 20px 15px 20px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid3 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
-{
-   float: left;
-}
-#LayoutGrid3 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 16.66666667%;
-   text-align: center;
-}
-#LayoutGrid3 > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 83.33333333%;
-   text-align: center;
-}
-#LayoutGrid3:before,
-#LayoutGrid3:after,
-#LayoutGrid3 .row:before,
-#LayoutGrid3 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid3:after,
-#LayoutGrid3 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
-{
-   float: none;
-   width: 100% !important;
-}
-}
 #wb_LayoutGrid4
 {
    clear: both;
@@ -260,14 +184,14 @@ body
    width: 100%;
    background-color: transparent;
    background-image: none;
-   border: 0px solid #A9A9A9;
+   border: 2px solid #A9A9A9;
    box-sizing: border-box;
    margin: 0;
 }
 #LayoutGrid4
 {
    box-sizing: border-box;
-   padding: 20px 15px 20px 15px;
+   padding: 30px 15px 30px 15px;
    margin-right: auto;
    margin-left: auto;
 }
@@ -326,6 +250,82 @@ body
    width: 100% !important;
 }
 }
+#wb_LayoutGrid3
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #DCDCDC;
+   background-image: none;
+   border: 2px solid #C0C0C0;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid3
+{
+   box-sizing: border-box;
+   padding: 30px 15px 30px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid3 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+{
+   float: left;
+}
+#LayoutGrid3 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 16.66666667%;
+   text-align: center;
+}
+#LayoutGrid3 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 83.33333333%;
+   text-align: center;
+}
+#LayoutGrid3:before,
+#LayoutGrid3:after,
+#LayoutGrid3 .row:before,
+#LayoutGrid3 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid3:after,
+#LayoutGrid3 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2
+{
+   float: none;
+   width: 100% !important;
+}
+}
 #wb_LayoutGrid1
 {
    clear: both;
@@ -334,7 +334,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: #F5F5F5;
+   background-color: #DCDCDC;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -560,8 +560,8 @@ body
    border: 0px solid #000000;
    padding: 0;
    display: inline-block;
-   width: 90px;
-   height: 83px;
+   width: 56px;
+   height: 51px;
    vertical-align: top;
 }
 #DatePicker4 .ui-datepicker
@@ -625,41 +625,9 @@ body
 #Card1-card-item1
 {
    box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   padding: 0;
-   color: #292B2C;
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 19px;
-}
-#Card1-card-item2
-{
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   padding: 0;
-   color: #292B2C;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#Card1-card-item3
-{
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   border-top: 1px #D8D8D8 solid;
-   border-width: 1px 0 0 0;
-   height: 0;
-   line-height: 0;
-}
-#Card1-card-footer
-{
-   box-sizing: border-box;
-   border-top: 1px solid #DEDEDE;
    border-radius: 0 0 3px 3px;
-   margin: 0;
-   padding: 12px 20px 12px 20px;
-   background-color: #F7F7F7;
-   background-image: none;
+   margin: 20px 20px 0px 20px;
+   padding: 0;
    color: #292B2C;
    font-family: Arial;
    font-weight: normal;
@@ -703,35 +671,6 @@ body
 }
 #Card2-card-item1
 {
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   padding: 0;
-   color: #292B2C;
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 19px;
-}
-#Card2-card-item2
-{
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   padding: 0;
-   color: #292B2C;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#Card2-card-item3
-{
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   border-top: 1px #D8D8D8 solid;
-   border-width: 1px 0 0 0;
-   height: 0;
-   line-height: 0;
-}
-#Card2-card-item4
-{
    display: inline-block;
    height: 35px;
    box-sizing: border-box;
@@ -747,7 +686,7 @@ body
    font-weight: normal;
    font-size: 13px;
 }
-#Card2-card-item4 a
+#Card2-card-item1 a
 {
    color: inherit;
    text-decoration: none;
@@ -801,22 +740,13 @@ body
 #Card3-card-item2
 {
    box-sizing: border-box;
+   border-radius: 0 0 3px 3px;
    margin: 20px 20px 0px 20px;
    padding: 0;
    color: #292B2C;
    font-family: Arial;
    font-weight: normal;
    font-size: 13px;
-}
-#Card3-card-item3
-{
-   box-sizing: border-box;
-   border-radius: 0 0 3px 3px;
-   margin: 20px 20px 0px 20px;
-   border-top: 1px #D8D8D8 solid;
-   border-width: 1px 0 0 0;
-   height: 0;
-   line-height: 0;
 }
 #DatePicker2 .ui-datepicker
 {
@@ -876,51 +806,15 @@ body
    flex: 1 1 auto;
    font-size: 0px;
 }
-#Card4-card-header
+#Card4-card-item0
 {
    box-sizing: border-box;
-   border-bottom: 1px solid #DEDEDE;
    border-radius: 3px 3px 0 0;
-   margin: 0;
-   padding: 12px 20px 12px 20px;
-   background-color: #F7F7F7;
-   background-image: none;
-   color: #0000CD;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#Card4-card-item1
-{
-   box-sizing: border-box;
    margin: 20px 20px 0px 20px;
    padding: 0;
    color: #292B2C;
    font-family: Arial;
    font-weight: normal;
-   font-size: 13px;
-}
-#Card4-card-item2
-{
-   box-sizing: border-box;
-   margin: 20px 20px 0px 20px;
-   border-top: 1px #D8D8D8 solid;
-   border-width: 1px 0 0 0;
-   height: 0;
-   line-height: 0;
-}
-#Card4-card-footer
-{
-   box-sizing: border-box;
-   border-top: 1px solid #DEDEDE;
-   border-radius: 0 0 3px 3px;
-   margin: 0;
-   padding: 12px 20px 12px 20px;
-   background-color: #F7F7F9;
-   background-image: none;
-   color: #B22222;
-   font-family: Arial;
-   font-weight: bold;
    font-size: 13px;
 }
 #wb_Image5
@@ -949,4 +843,39 @@ body
 #wb_Text1 div
 {
    text-align: right;
+}
+#wb_FontAwesomeIcon2
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0px 10px 0px 0px;
+   padding: 12px 12px 12px 12px;
+   vertical-align: top;
+}
+#wb_FontAwesomeIcon2:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 3px solid #FFFFFF;
+}
+#FontAwesomeIcon2
+{
+   height: 32px;
+   width: 30px;
+}
+#FontAwesomeIcon2 i
+{
+   color: #0AABE1;
+   display: inline-block;
+   font-size: 30px;
+   line-height: 32px;
+   vertical-align: middle;
+   width: 29px;
+}
+#wb_FontAwesomeIcon2:hover i
+{
+   color: #0AABE1;
 }

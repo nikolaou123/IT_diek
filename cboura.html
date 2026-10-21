@@ -20,6 +20,7 @@ $(document).ready(function()
 {
    $('#wb_FontAwesomeIcon28').addClass('visibility-hidden');
    $('#wb_FontAwesomeIcon1').addClass('visibility-hidden');
+   $('#wb_FontAwesomeIcon1').addClass('visibility-hidden');
 var timerPageHeader = null;
 function PageHeaderHide()
 {
@@ -131,6 +132,20 @@ $('#PageHeader').on("mouseleave",function()
    {
       $('#DatePicker2_input').attr('value',$(this).val());
    });
+   function onScrollFontAwesomeIcon2()
+   {
+      var $obj = $("#wb_FontAwesomeIcon2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FontAwesomeIcon1', 'transform-lightspeed-in', 700, 1000);
+      }
+   }
+   onScrollFontAwesomeIcon2();
+   $(window).scroll(function(event)
+   {
+      onScrollFontAwesomeIcon2();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -141,19 +156,21 @@ $(window).on('load', function()
 </head>
 <body>
 <div id="PageHeader_sensitive" style="position:fixed;display:none;left:0;top:0;right:0;height:67px;z-index:9999"></div>
-<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:67px;z-index:23;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
+<div id="PageHeader" style="position:fixed;overflow:hidden;text-align:center;left:0;top:0;right:0;height:67px;z-index:24;" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 <div id="PageHeader_Container" style="width:1203px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text1" style="position:absolute;left:755px;top:24px;width:448px;height:19px;text-align:right;z-index:0;">
 <span style="color:#A52A2A;font-family:Arial;font-size:17px;">Εσωτερική Επικοινωνία με Χριστίνα Μπούρα</span></div>
 <div id="wb_Image5" style="position:absolute;left:1px;top:1px;width:64px;height:64px;z-index:1;">
 <img src="images/is1.jpg" id="Image5" alt=""></div>
+<div id="wb_FontAwesomeIcon2" style="position:absolute;left:96px;top:2px;width:30px;height:32px;text-align:center;z-index:2;">
+<a href="mailto:ep.nikolaou@ppcgroup.com" title="E-mail to Ep.Nikolaou"><div id="FontAwesomeIcon2"><i class="fa fa-exclamation-triangle"></i></div></a></div>
 </div>
 </div>
 <div id="wb_LayoutGrid5">
 <div id="LayoutGrid5">
 <div class="row">
 <div class="col-1">
-<div id="Html1" style="display:inline-block;width:71px;height:75px;z-index:2">
+<div id="Html1" style="display:inline-block;width:71px;height:67px;z-index:3">
 </div>
 </div>
 </div>
@@ -164,53 +181,18 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker2_input" name="DatePicker1" style="display:none" type="text" value="10/18/2026">
-<div id="DatePicker2" style="display:inline-block;width:100%;height:185px;z-index:3;">
+<div id="DatePicker2" style="display:inline-block;width:100%;height:185px;z-index:4;">
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card4" style="display:flex;width:100%;text-align:center;z-index:4;">
-   <div id="Card4-card-header">Επικοινωνία με IT</div>
+<div id="wb_Card4" style="display:flex;width:100%;text-align:center;z-index:5;">
    <div id="Card4-card-body">
-      <div id="Card4-card-item1">Change Password Γρανίτσας (cbg??)<br>Προγραμματισμός παρουσιών</div>
-      <hr id="Card4-card-item2">
+      <div id="Card4-card-item0">Change Password Γρανίτσας (cbg??)<br>Προγραμματισμός παρουσιών<br><br>Επιτρέπεται η αλλαγή password 3 usernames την ημέρα</div>
    </div>
-   <div id="Card4-card-footer">Επιτρέπεται αλλαγή κάθε ημέρα σε 3 usernames</div>
 
 </div>
-<div id="wb_Image4" style="display:inline-block;width:81px;height:81px;z-index:5;">
+<div id="wb_Image4" style="display:inline-block;width:81px;height:81px;z-index:6;">
 <img src="images/em.jpg" id="Image4" alt="">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<input id="DatePicker4_input" name="DatePicker1" style="display:none" type="text" value="9/28/2026">
-<div id="DatePicker4" style="display:inline-block;width:100%;height:185px;z-index:6;">
-</div>
-<div id="wb_FontAwesomeIcon28" style="display:inline-block;width:30px;height:32px;text-align:center;z-index:7;">
-<a href="./RE_ Παρόντες στις εγκαταστάσεις ΔΚΚ (28_09_2026 15_39_07).msg" target="_blank"><div id="FontAwesomeIcon28"><i class="fa fa-exclamation-triangle"></i></div></a>
-</div>
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:30px;height:32px;text-align:center;z-index:8;">
-<a href="./ΑΣΚΗΣΗ 28_09_2026.msg" target="_blank"><div id="FontAwesomeIcon1"><i class="fa fa-exclamation-triangle"></i></div></a>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Card1" style="display:flex;width:100%;text-align:center;z-index:9;">
-   <div id="Card1-card-header">Εκτέλεση εκκένωσης κτιρίων (ΑΣΚΗΣΗ 28.09.2026)</div>
-   <div id="Card1-card-body">
-      <div id="Card1-card-item1">iHub ERP</div>
-      <div id="Card1-card-item2">Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</div>
-      <hr id="Card1-card-item3">
-   </div>
-   <div id="Card1-card-footer">On Time παρόντες στο Campus</div>
-
-</div>
-<div id="wb_Image2" style="display:inline-block;width:83px;height:77px;z-index:10;">
-<img src="images/wa.png" id="Image2" alt="">
 </div>
 </div>
 </div>
@@ -221,22 +203,48 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker3_input" name="DatePicker1" style="display:none" type="text" value="10/1/2026">
-<div id="DatePicker3" style="display:inline-block;width:100%;height:185px;z-index:11;">
+<div id="DatePicker3" style="display:inline-block;width:100%;height:185px;z-index:7;">
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card2" style="display:flex;width:100%;text-align:center;z-index:12;">
+<div id="wb_Card2" style="display:flex;width:100%;text-align:center;z-index:8;">
    <div id="Card2-card-header">Application Modernization </div>
    <div id="Card2-card-body">
-      <div id="Card2-card-item1">iHub ERP</div>
-      <div id="Card2-card-item2">Μετατροπή της εφαρμογής iiHubERP</div>
-      <hr id="Card2-card-item3">
-      <div id="Card2-card-item4"><a href="./application modernization.pdf">Read More</a></div>
+      <div id="Card2-card-item1"><a href="./application modernization.pdf">Read More</a></div>
    </div>
 
 </div>
-<div id="wb_Image1" style="display:inline-block;width:111px;height:88px;z-index:13;">
+<div id="wb_Image1" style="display:inline-block;width:111px;height:88px;z-index:9;">
 <img src="images/cs.jpg" id="Image1" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<input id="DatePicker4_input" name="DatePicker1" style="display:none" type="text" value="9/28/2026">
+<div id="DatePicker4" style="display:inline-block;width:100%;height:185px;z-index:10;">
+</div>
+<div id="wb_FontAwesomeIcon28" style="display:inline-block;width:30px;height:32px;text-align:center;z-index:11;">
+<a href="./RE_ Παρόντες στις εγκαταστάσεις ΔΚΚ (28_09_2026 15_39_07).msg" target="_blank"><div id="FontAwesomeIcon28"><i class="fa fa-exclamation-triangle"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:30px;height:32px;text-align:center;z-index:12;">
+<a href="./ΑΣΚΗΣΗ 28_09_2026.msg" target="_blank"><div id="FontAwesomeIcon1"><i class="fa fa-exclamation-triangle"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card1" style="display:flex;width:100%;text-align:center;z-index:13;">
+   <div id="Card1-card-header">Εκτέλεση εκκένωσης κτιρίων (ΑΣΚΗΣΗ 28.09.2026)</div>
+   <div id="Card1-card-body">
+      <div id="Card1-card-item1">Δεν ήταν σωστή η απεικόνηση των παρόντων για δύο λόγους.<br>1° Δεν υπήρχαν χτυπήματα κάρτας απο όλους.<br>2° Η Ενημέρωση - συγχρονισμός μεταξύ Arion + Azure γίνεται κάθε μισή ώρα λόγο επικοινωνίας με το Shadow δίκτυο</div>
+   </div>
+
+</div>
+<div id="wb_Image2" style="display:inline-block;width:83px;height:77px;z-index:14;">
+<img src="images/wa.png" id="Image2" alt="">
 </div>
 </div>
 </div>
@@ -247,20 +255,19 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <input id="DatePicker1_input" name="DatePicker1" style="display:none" type="text" value="9/18/2026">
-<div id="DatePicker1" style="display:inline-block;width:100%;height:185px;z-index:14;">
+<div id="DatePicker1" style="display:inline-block;width:100%;height:185px;z-index:15;">
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card3" style="display:flex;width:100%;text-align:center;z-index:15;">
+<div id="wb_Card3" style="display:flex;width:100%;text-align:center;z-index:16;">
    <div id="Card3-card-header">Εξετάσεις πιστοποίησης προσώπων σε δύο σχήματα (φορτιστές & ΥΔΕ)</div>
    <div id="Card3-card-body">
       <div id="Card3-card-item1">iHub ERP Exams</div>
       <div id="Card3-card-item2">Αδυναμία σύνδεσης laptops εξεταζομένων στο δίκτυο. Συνεχείς αποσυνδέσεις. <br>Αδυναμία επικοινωνίας με το ΙΤ. Δεν υπάρχει κεντρική πληροφόρηση σε Τηλεργασίες και άδειες?</div>
-      <hr id="Card3-card-item3">
    </div>
 
 </div>
-<div id="wb_Image3" style="display:inline-block;width:90px;height:83px;z-index:16;">
+<div id="wb_Image3" style="display:inline-block;width:56px;height:51px;z-index:17;">
 <img src="images/wa.png" id="Image3" alt="">
 </div>
 </div>
