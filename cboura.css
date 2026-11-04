@@ -652,80 +652,6 @@ body
 {
    margin: 0;
 }
-#wb_FontAwesomeIcon28
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #D0D6D7;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0px 10px 0px 0px;
-   padding: 12px 12px 12px 12px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_FontAwesomeIcon28:hover
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #FFFFFF;
-}
-#FontAwesomeIcon28
-{
-   height: 32px;
-   width: 30px;
-}
-#FontAwesomeIcon28 i
-{
-   color: #0AABE1;
-   display: inline-block;
-   font-size: 30px;
-   line-height: 32px;
-   vertical-align: middle;
-   width: 29px;
-}
-#wb_FontAwesomeIcon28:hover i
-{
-   color: #0AABE1;
-}
-#wb_FontAwesomeIcon1
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #D0D6D7;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0px 10px 0px 0px;
-   padding: 12px 12px 12px 12px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_FontAwesomeIcon1:hover
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #FFFFFF;
-}
-#FontAwesomeIcon1
-{
-   height: 32px;
-   width: 30px;
-}
-#FontAwesomeIcon1 i
-{
-   color: #0AABE1;
-   display: inline-block;
-   font-size: 30px;
-   line-height: 32px;
-   vertical-align: middle;
-   width: 29px;
-}
-#wb_FontAwesomeIcon1:hover i
-{
-   color: #0AABE1;
-}
 #DatePicker3 .ui-datepicker
 {
    font-family: Arial;
@@ -1071,41 +997,6 @@ body
 #wb_Text1 div
 {
    text-align: right;
-}
-#wb_FontAwesomeIcon2
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #D0D6D7;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0px 10px 0px 0px;
-   padding: 12px 12px 12px 12px;
-   vertical-align: top;
-}
-#wb_FontAwesomeIcon2:hover
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 3px solid #FFFFFF;
-}
-#FontAwesomeIcon2
-{
-   height: 32px;
-   width: 30px;
-}
-#FontAwesomeIcon2 i
-{
-   color: #0AABE1;
-   display: inline-block;
-   font-size: 30px;
-   line-height: 32px;
-   vertical-align: middle;
-   width: 29px;
-}
-#wb_FontAwesomeIcon2:hover i
-{
-   color: #0AABE1;
 }
 #DatePicker5 .ui-datepicker
 {
