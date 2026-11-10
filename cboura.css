@@ -124,7 +124,7 @@ body
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2
+#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2, #LayoutGrid8 > .row > .col-3, #LayoutGrid8 > .row > .col-4, #LayoutGrid8 > .row > .col-5
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -133,7 +133,7 @@ body
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2
+#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2, #LayoutGrid8 > .row > .col-3, #LayoutGrid8 > .row > .col-4, #LayoutGrid8 > .row > .col-5
 {
    float: left;
 }
@@ -150,7 +150,31 @@ body
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   width: 83.33333333%;
+   width: 25%;
+   text-align: left;
+}
+#LayoutGrid8 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: left;
+}
+#LayoutGrid8 > .row > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: left;
+}
+#LayoutGrid8 > .row > .col-5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 8.33333333%;
    text-align: left;
 }
 #LayoutGrid8:before,
@@ -168,7 +192,7 @@ body
 }
 @media (max-width: 480px)
 {
-#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2
+#LayoutGrid8 > .row > .col-1, #LayoutGrid8 > .row > .col-2, #LayoutGrid8 > .row > .col-3, #LayoutGrid8 > .row > .col-4, #LayoutGrid8 > .row > .col-5
 {
    float: none;
    width: 100% !important;
@@ -1218,51 +1242,6 @@ body
 {
    text-align: right;
 }
-#NavigationBar1 ul.navbar
-{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-#NavigationBar1 ul.navbar li
-{
-   height: 30px;
-   width: 336px;
-   margin: 0 0 3px 0;
-   vertical-align: bottom;
-}
-#NavigationBar1 ul.navbar li a
-{
-   display: block;
-   position: relative;
-}
-#NavigationBar1 ul.navbar li a img
-{
-   position: absolute;
-   left: 0;
-   z-index: 1;
-   border-width: 0;
-}
-#NavigationBar1 ul.navbar li span
-{
-   display: block;
-   height: 30px;
-   width: 336px;
-   position: absolute;
-   z-index: 2;
-}
-#NavigationBar1 a .hover
-{
-   visibility: hidden;
-}
-#NavigationBar1 a:hover .hover
-{
-   visibility: visible;
-}
-#NavigationBar1 a:hover span
-{
-   visibility: hidden;
-}
 #wb_Text3 
 {
    background-color: transparent;
@@ -1396,51 +1375,6 @@ body
 {
    text-align: left;
 }
-#NavigationBar2 ul.navbar
-{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-#NavigationBar2 ul.navbar li
-{
-   height: 30px;
-   width: 336px;
-   margin: 0 0 3px 0;
-   vertical-align: bottom;
-}
-#NavigationBar2 ul.navbar li a
-{
-   display: block;
-   position: relative;
-}
-#NavigationBar2 ul.navbar li a img
-{
-   position: absolute;
-   left: 0;
-   z-index: 1;
-   border-width: 0;
-}
-#NavigationBar2 ul.navbar li span
-{
-   display: block;
-   height: 30px;
-   width: 336px;
-   position: absolute;
-   z-index: 2;
-}
-#NavigationBar2 a .hover
-{
-   visibility: hidden;
-}
-#NavigationBar2 a:hover .hover
-{
-   visibility: visible;
-}
-#NavigationBar2 a:hover span
-{
-   visibility: hidden;
-}
 .ui-dialog.ui-widget
 {
    font-size: 1em !important;
@@ -1560,4 +1494,132 @@ body
 #wb_Text7 div
 {
    text-align: left;
+}
+#Button1
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button2
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button3
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button4
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button5
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 10px 0px 10px 0px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text8 div
+{
+   text-align: left;
+}
+#Button6
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button7
+{
+   border: 3px solid #FFFFFF;
+   border-radius: 5px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#ThemeableButton1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   border-width: 1px;
+   margin: 0;
+}
+#ThemeableButton1 .ui-button
+{
+   position: absolute;
+   padding: 0;
+}
+#ThemeableButton1.ui-corner-all
+{
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+#ThemeableButton1.ui-corner-all
+{
+   border-bottom-right-radius: 4px;
+   border-top-right-radius: 4px;
 }
